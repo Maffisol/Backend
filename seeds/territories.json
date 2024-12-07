@@ -1,0 +1,6874 @@
+[
+    {
+        "name": "Downtown",
+        "bonus": "Income Boost",
+        "resourceIncome": 50,
+        "status": "free"
+    },
+    {
+        "name": "Harbor",
+        "bonus": "Defense Boost",
+        "resourceIncome": 30,
+        "status": "free"
+    },
+    {
+        "name": "University District Plaza",
+        "bonus": "Hidden Base",
+        "resourceIncome": 87,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory East",
+        "bonus": "Morale Boost",
+        "resourceIncome": 52,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Valley",
+        "bonus": "Secret Base",
+        "resourceIncome": 15,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Valley",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 65,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "University District Edge",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 83,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks Valley",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 88,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown East",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 20,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Peak",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 52,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Hub",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 19,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Alpha",
+        "bonus": "Defense Boost",
+        "resourceIncome": 82,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks Park",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 82,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs East",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 78,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates District",
+        "bonus": "Hidden Base",
+        "resourceIncome": 93,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Park",
+        "bonus": "Hidden Base",
+        "resourceIncome": 71,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Center",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 62,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress South",
+        "bonus": "Rare Items",
+        "resourceIncome": 45,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs West",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 51,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery District",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 12,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Core",
+        "bonus": "Income Boost",
+        "resourceIncome": 33,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown South",
+        "bonus": "Steady Income",
+        "resourceIncome": 68,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Park",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 65,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Park",
+        "bonus": "Strategy Training",
+        "resourceIncome": 94,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Peak",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 98,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory North",
+        "bonus": "Income Boost",
+        "resourceIncome": 60,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Delta",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 99,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost Peak",
+        "bonus": "Morale Boost",
+        "resourceIncome": 18,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown South",
+        "bonus": "Morale Boost",
+        "resourceIncome": 73,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown South",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 65,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Plaza",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 94,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District East",
+        "bonus": "Defense Boost",
+        "resourceIncome": 100,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs West",
+        "bonus": "Strategy Training",
+        "resourceIncome": 43,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates North",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 94,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Park",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 66,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Station",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 67,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Center",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 18,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks South",
+        "bonus": "Strategy Training",
+        "resourceIncome": 60,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Park",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 88,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost Front",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 56,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot East",
+        "bonus": "Rare Items",
+        "resourceIncome": 65,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor District",
+        "bonus": "Morale Boost",
+        "resourceIncome": 25,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery West",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 79,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Apex",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 62,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Shore",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 45,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Edge",
+        "bonus": "Armory Boost",
+        "resourceIncome": 74,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Shore",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 16,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory North",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 61,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Beta",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 59,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Delta",
+        "bonus": "Income Boost",
+        "resourceIncome": 86,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost Front",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 37,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Core",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 22,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Center",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 20,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Front",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 18,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Plaza",
+        "bonus": "Income Boost",
+        "resourceIncome": 13,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Plaza",
+        "bonus": "Secret Base",
+        "resourceIncome": 33,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Alpha",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 34,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs South",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 76,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost Center",
+        "bonus": "Armory Boost",
+        "resourceIncome": 52,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Center",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 29,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Apex",
+        "bonus": "Hidden Base",
+        "resourceIncome": 33,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery Core",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 22,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown South",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 59,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Hub",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 21,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market District",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 69,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Apex",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 26,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Core",
+        "bonus": "Strategy Training",
+        "resourceIncome": 73,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor North",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 36,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery Station",
+        "bonus": "Income Surge",
+        "resourceIncome": 40,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Peak",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 12,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Station",
+        "bonus": "Armory Boost",
+        "resourceIncome": 21,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Center",
+        "bonus": "Income Surge",
+        "resourceIncome": 72,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Park",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 49,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Apex",
+        "bonus": "Rare Items",
+        "resourceIncome": 56,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Edge",
+        "bonus": "Secret Base",
+        "resourceIncome": 77,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Delta",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 48,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot West",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 92,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "University District North",
+        "bonus": "Income Surge",
+        "resourceIncome": 40,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot South",
+        "bonus": "Strategy Training",
+        "resourceIncome": 32,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Alpha",
+        "bonus": "Defense Boost",
+        "resourceIncome": 72,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Core",
+        "bonus": "Morale Boost",
+        "resourceIncome": 59,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Valley",
+        "bonus": "Defense Boost",
+        "resourceIncome": 52,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Apex",
+        "bonus": "Strategy Training",
+        "resourceIncome": 51,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery Alpha",
+        "bonus": "Secret Base",
+        "resourceIncome": 95,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost Apex",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 59,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost Core",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 14,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Hub",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 54,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "University District Peak",
+        "bonus": "Morale Boost",
+        "resourceIncome": 23,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Shore",
+        "bonus": "Income Surge",
+        "resourceIncome": 62,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Shore",
+        "bonus": "Rare Items",
+        "resourceIncome": 25,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery East",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 15,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Apex",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 93,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Core",
+        "bonus": "Rare Items",
+        "resourceIncome": 26,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Edge",
+        "bonus": "Armory Boost",
+        "resourceIncome": 25,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Core",
+        "bonus": "Hidden Base",
+        "resourceIncome": 49,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Core",
+        "bonus": "Income Surge",
+        "resourceIncome": 86,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery Valley",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 58,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Delta",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 92,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District Edge",
+        "bonus": "Hidden Base",
+        "resourceIncome": 58,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery Apex",
+        "bonus": "Income Surge",
+        "resourceIncome": 13,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Alpha",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 49,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row East",
+        "bonus": "Morale Boost",
+        "resourceIncome": 80,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs West",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 40,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Station",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 94,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Shore",
+        "bonus": "Rare Items",
+        "resourceIncome": 77,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Peak",
+        "bonus": "Strategy Training",
+        "resourceIncome": 80,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District Valley",
+        "bonus": "Defense Boost",
+        "resourceIncome": 98,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery Apex",
+        "bonus": "Steady Income",
+        "resourceIncome": 95,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Core",
+        "bonus": "Armory Boost",
+        "resourceIncome": 62,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Docks East",
+        "bonus": "Rare Items",
+        "resourceIncome": 27,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row East",
+        "bonus": "Defense Boost",
+        "resourceIncome": 41,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Beta",
+        "bonus": "Armory Boost",
+        "resourceIncome": 59,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone East",
+        "bonus": "Armory Boost",
+        "resourceIncome": 67,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Peak",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 16,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone Park",
+        "bonus": "Income Surge",
+        "resourceIncome": 69,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Hub",
+        "bonus": "Steady Income",
+        "resourceIncome": 42,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Park",
+        "bonus": "Income Boost",
+        "resourceIncome": 24,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot West",
+        "bonus": "Hidden Base",
+        "resourceIncome": 15,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District Station",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 36,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "University District Shore",
+        "bonus": "Secret Base",
+        "resourceIncome": 16,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery Valley",
+        "bonus": "Armory Boost",
+        "resourceIncome": 53,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Plaza",
+        "bonus": "Armory Boost",
+        "resourceIncome": 77,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Beta",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 40,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market South",
+        "bonus": "Hidden Base",
+        "resourceIncome": 87,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Station",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 72,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District Plaza",
+        "bonus": "Defense Boost",
+        "resourceIncome": 52,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District Apex",
+        "bonus": "Rare Items",
+        "resourceIncome": 49,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Park",
+        "bonus": "Armory Boost",
+        "resourceIncome": 39,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row South",
+        "bonus": "Secret Base",
+        "resourceIncome": 95,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Alpha",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 72,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Station",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 82,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Apex",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 23,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "University District West",
+        "bonus": "Income Boost",
+        "resourceIncome": 25,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost Station",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 87,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "University District Station",
+        "bonus": "Steady Income",
+        "resourceIncome": 20,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Peak",
+        "bonus": "Steady Income",
+        "resourceIncome": 35,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs South",
+        "bonus": "Strategy Training",
+        "resourceIncome": 14,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone South",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 11,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market District",
+        "bonus": "Rare Items",
+        "resourceIncome": 46,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Delta",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 34,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Beta",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 37,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Park",
+        "bonus": "Secret Base",
+        "resourceIncome": 61,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Beta",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 23,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Front",
+        "bonus": "Defense Boost",
+        "resourceIncome": 24,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub North",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 99,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Valley",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 67,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Delta",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 18,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Core",
+        "bonus": "Income Surge",
+        "resourceIncome": 80,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs West",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 93,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Park",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 12,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Beta",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 59,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub South",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 82,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Station",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 47,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Apex",
+        "bonus": "Income Surge",
+        "resourceIncome": 28,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery Core",
+        "bonus": "Income Surge",
+        "resourceIncome": 62,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District Core",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 52,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "University District Station",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 64,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Core",
+        "bonus": "Morale Boost",
+        "resourceIncome": 32,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot West",
+        "bonus": "Income Boost",
+        "resourceIncome": 92,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks Core",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 29,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone North",
+        "bonus": "Hidden Base",
+        "resourceIncome": 37,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks Apex",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 62,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks East",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 41,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone North",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 32,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone Core",
+        "bonus": "Steady Income",
+        "resourceIncome": 26,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Edge",
+        "bonus": "Defense Boost",
+        "resourceIncome": 91,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone Park",
+        "bonus": "Hidden Base",
+        "resourceIncome": 33,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress North",
+        "bonus": "Hidden Base",
+        "resourceIncome": 36,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Edge",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 27,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Shore",
+        "bonus": "Secret Base",
+        "resourceIncome": 85,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone Core",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 76,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost District",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 26,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost Shore",
+        "bonus": "Strategy Training",
+        "resourceIncome": 70,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs East",
+        "bonus": "Income Surge",
+        "resourceIncome": 70,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Shore",
+        "bonus": "Defense Boost",
+        "resourceIncome": 25,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Alpha",
+        "bonus": "Income Surge",
+        "resourceIncome": 32,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks Apex",
+        "bonus": "Income Surge",
+        "resourceIncome": 11,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot District",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 15,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Park",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 37,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Front",
+        "bonus": "Defense Boost",
+        "resourceIncome": 57,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Center",
+        "bonus": "Hidden Base",
+        "resourceIncome": 66,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks Park",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 76,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Delta",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 35,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District Valley",
+        "bonus": "Secret Base",
+        "resourceIncome": 88,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Core",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 19,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Edge",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 87,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District West",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 60,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Plaza",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 92,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Peak",
+        "bonus": "Rare Items",
+        "resourceIncome": 61,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Front",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 54,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Edge",
+        "bonus": "Income Surge",
+        "resourceIncome": 51,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Alpha",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 23,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory North",
+        "bonus": "Armory Boost",
+        "resourceIncome": 67,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Valley",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 48,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Plaza",
+        "bonus": "Steady Income",
+        "resourceIncome": 15,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District Valley",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 35,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Edge",
+        "bonus": "Armory Boost",
+        "resourceIncome": 51,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Shore",
+        "bonus": "Strategy Training",
+        "resourceIncome": 53,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Park",
+        "bonus": "Income Boost",
+        "resourceIncome": 50,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "University District District",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 45,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District Apex",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 80,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District Delta",
+        "bonus": "Armory Boost",
+        "resourceIncome": 11,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks Beta",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 53,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown South",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 96,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Delta",
+        "bonus": "Defense Boost",
+        "resourceIncome": 36,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Alpha",
+        "bonus": "Hidden Base",
+        "resourceIncome": 71,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "University District Front",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 86,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District Shore",
+        "bonus": "Defense Boost",
+        "resourceIncome": 71,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District Plaza",
+        "bonus": "Rare Items",
+        "resourceIncome": 85,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs East",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 94,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Edge",
+        "bonus": "Defense Boost",
+        "resourceIncome": 69,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Core",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 18,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Apex",
+        "bonus": "Defense Boost",
+        "resourceIncome": 90,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Station",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 98,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Alpha",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 78,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Delta",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 80,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Center",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 61,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Beta",
+        "bonus": "Rare Items",
+        "resourceIncome": 43,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Core",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 52,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District Shore",
+        "bonus": "Strategy Training",
+        "resourceIncome": 12,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Shore",
+        "bonus": "Armory Boost",
+        "resourceIncome": 38,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Plaza",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 64,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown East",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 74,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot District",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 71,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market East",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 29,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Station",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 76,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery Core",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 93,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Apex",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 18,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row North",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 70,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory North",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 68,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Peak",
+        "bonus": "Strategy Training",
+        "resourceIncome": 41,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Center",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 69,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District West",
+        "bonus": "Defense Boost",
+        "resourceIncome": 41,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown West",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 61,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery Delta",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 42,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory East",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 49,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot East",
+        "bonus": "Rare Items",
+        "resourceIncome": 49,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Station",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 24,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Edge",
+        "bonus": "Strategy Training",
+        "resourceIncome": 19,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost Beta",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 62,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Valley",
+        "bonus": "Rare Items",
+        "resourceIncome": 64,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Alpha",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 24,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District Delta",
+        "bonus": "Strategy Training",
+        "resourceIncome": 31,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates North",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 93,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Center",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 50,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown East",
+        "bonus": "Rare Items",
+        "resourceIncome": 81,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Hub",
+        "bonus": "Steady Income",
+        "resourceIncome": 11,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Apex",
+        "bonus": "Secret Base",
+        "resourceIncome": 28,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub District",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 26,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress East",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 32,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks Center",
+        "bonus": "Armory Boost",
+        "resourceIncome": 70,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost North",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 26,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks Apex",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 55,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Docks South",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 92,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost Apex",
+        "bonus": "Steady Income",
+        "resourceIncome": 83,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Station",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 99,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown South",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 63,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor South",
+        "bonus": "Rare Items",
+        "resourceIncome": 68,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Valley",
+        "bonus": "Secret Base",
+        "resourceIncome": 44,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row North",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 78,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District Core",
+        "bonus": "Strategy Training",
+        "resourceIncome": 47,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Docks South",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 74,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Alpha",
+        "bonus": "Rare Items",
+        "resourceIncome": 93,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Shore",
+        "bonus": "Defense Boost",
+        "resourceIncome": 78,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Shore",
+        "bonus": "Armory Boost",
+        "resourceIncome": 18,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost Shore",
+        "bonus": "Strategy Training",
+        "resourceIncome": 63,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District North",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 81,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Beta",
+        "bonus": "Secret Base",
+        "resourceIncome": 34,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone West",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 92,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District Core",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 42,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Station",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 72,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost Park",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 96,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Edge",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 40,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District West",
+        "bonus": "Income Boost",
+        "resourceIncome": 29,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone Plaza",
+        "bonus": "Morale Boost",
+        "resourceIncome": 66,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone North",
+        "bonus": "Defense Boost",
+        "resourceIncome": 80,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Core",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 58,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery Station",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 44,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Delta",
+        "bonus": "Rare Items",
+        "resourceIncome": 79,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Valley",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 64,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost Front",
+        "bonus": "Defense Boost",
+        "resourceIncome": 79,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory District",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 43,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Beta",
+        "bonus": "Hidden Base",
+        "resourceIncome": 92,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Apex",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 95,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "University District Center",
+        "bonus": "Secret Base",
+        "resourceIncome": 47,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Center",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 13,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Shore",
+        "bonus": "Secret Base",
+        "resourceIncome": 33,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District Front",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 72,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Docks East",
+        "bonus": "Rare Items",
+        "resourceIncome": 18,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost Park",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 51,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Beta",
+        "bonus": "Strategy Training",
+        "resourceIncome": 30,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Beta",
+        "bonus": "Morale Boost",
+        "resourceIncome": 26,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Edge",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 19,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Edge",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 55,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Valley",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 38,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost Delta",
+        "bonus": "Defense Boost",
+        "resourceIncome": 40,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Station",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 81,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Front",
+        "bonus": "Steady Income",
+        "resourceIncome": 31,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Plaza",
+        "bonus": "Defense Boost",
+        "resourceIncome": 30,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Valley",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 19,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Edge",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 65,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "University District Alpha",
+        "bonus": "Hidden Base",
+        "resourceIncome": 56,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost District",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 27,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Apex",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 69,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory North",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 98,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Delta",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 24,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "University District Valley",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 89,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Edge",
+        "bonus": "Hidden Base",
+        "resourceIncome": 10,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Apex",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 45,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "University District Plaza",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 98,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Shore",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 49,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks Station",
+        "bonus": "Secret Base",
+        "resourceIncome": 18,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Delta",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 15,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Station",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 24,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost Shore",
+        "bonus": "Rare Items",
+        "resourceIncome": 41,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Valley",
+        "bonus": "Income Boost",
+        "resourceIncome": 90,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Beta",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 18,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub West",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 51,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Front",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 95,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Valley",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 49,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "University District Center",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 18,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Core",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 38,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District Peak",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 62,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone Plaza",
+        "bonus": "Armory Boost",
+        "resourceIncome": 39,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Hub",
+        "bonus": "Rare Items",
+        "resourceIncome": 28,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory District",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 95,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Station",
+        "bonus": "Rare Items",
+        "resourceIncome": 24,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Delta",
+        "bonus": "Defense Boost",
+        "resourceIncome": 46,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Valley",
+        "bonus": "Income Surge",
+        "resourceIncome": 36,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone Station",
+        "bonus": "Armory Boost",
+        "resourceIncome": 95,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Docks South",
+        "bonus": "Income Surge",
+        "resourceIncome": 58,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Hub",
+        "bonus": "Armory Boost",
+        "resourceIncome": 42,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Alpha",
+        "bonus": "Armory Boost",
+        "resourceIncome": 15,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks Apex",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 74,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Beta",
+        "bonus": "Armory Boost",
+        "resourceIncome": 35,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District Station",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 81,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "University District Core",
+        "bonus": "Income Boost",
+        "resourceIncome": 31,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Hub",
+        "bonus": "Income Boost",
+        "resourceIncome": 25,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Valley",
+        "bonus": "Morale Boost",
+        "resourceIncome": 37,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Plaza",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 51,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Front",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 11,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Center",
+        "bonus": "Armory Boost",
+        "resourceIncome": 73,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Valley",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 26,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor East",
+        "bonus": "Rare Items",
+        "resourceIncome": 39,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Edge",
+        "bonus": "Income Surge",
+        "resourceIncome": 20,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost Park",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 82,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Park",
+        "bonus": "Steady Income",
+        "resourceIncome": 29,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Station",
+        "bonus": "Rare Items",
+        "resourceIncome": 49,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District North",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 73,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Shore",
+        "bonus": "Steady Income",
+        "resourceIncome": 49,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks West",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 91,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown District",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 37,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Center",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 59,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Beta",
+        "bonus": "Armory Boost",
+        "resourceIncome": 15,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Core",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 11,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Plaza",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 21,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown East",
+        "bonus": "Defense Boost",
+        "resourceIncome": 26,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates East",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 23,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Core",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 84,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Center",
+        "bonus": "Hidden Base",
+        "resourceIncome": 15,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Delta",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 97,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Alpha",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 72,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub East",
+        "bonus": "Income Boost",
+        "resourceIncome": 83,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Valley",
+        "bonus": "Income Surge",
+        "resourceIncome": 47,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery District",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 64,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Peak",
+        "bonus": "Steady Income",
+        "resourceIncome": 20,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery Plaza",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 79,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Center",
+        "bonus": "Secret Base",
+        "resourceIncome": 29,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "University District Valley",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 24,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "University District South",
+        "bonus": "Morale Boost",
+        "resourceIncome": 41,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates East",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 33,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone North",
+        "bonus": "Income Boost",
+        "resourceIncome": 27,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks Hub",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 90,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown District",
+        "bonus": "Income Boost",
+        "resourceIncome": 79,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone Peak",
+        "bonus": "Strategy Training",
+        "resourceIncome": 79,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone Park",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 97,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Hub",
+        "bonus": "Morale Boost",
+        "resourceIncome": 33,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Park",
+        "bonus": "Income Boost",
+        "resourceIncome": 59,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Center",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 42,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone Apex",
+        "bonus": "Rare Items",
+        "resourceIncome": 20,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Valley",
+        "bonus": "Armory Boost",
+        "resourceIncome": 80,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Apex",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 67,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Delta",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 71,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Peak",
+        "bonus": "Strategy Training",
+        "resourceIncome": 58,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone Hub",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 86,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Shore",
+        "bonus": "Secret Base",
+        "resourceIncome": 54,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery Delta",
+        "bonus": "Defense Boost",
+        "resourceIncome": 74,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Park",
+        "bonus": "Armory Boost",
+        "resourceIncome": 96,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Front",
+        "bonus": "Rare Items",
+        "resourceIncome": 85,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Edge",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 83,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Core",
+        "bonus": "Income Surge",
+        "resourceIncome": 51,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Docks North",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 90,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Valley",
+        "bonus": "Morale Boost",
+        "resourceIncome": 63,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Edge",
+        "bonus": "Secret Base",
+        "resourceIncome": 15,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost Apex",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 92,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks Edge",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 25,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Peak",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 86,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Station",
+        "bonus": "Income Boost",
+        "resourceIncome": 65,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone Station",
+        "bonus": "Hidden Base",
+        "resourceIncome": 41,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Hub",
+        "bonus": "Strategy Training",
+        "resourceIncome": 94,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Park",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 19,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Front",
+        "bonus": "Armory Boost",
+        "resourceIncome": 75,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Edge",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 84,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "University District Park",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 72,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Hub",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 42,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District Beta",
+        "bonus": "Income Boost",
+        "resourceIncome": 60,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District Peak",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 21,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery Delta",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 21,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown West",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 77,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost District",
+        "bonus": "Income Surge",
+        "resourceIncome": 44,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District Peak",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 27,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Docks West",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 24,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Edge",
+        "bonus": "Armory Boost",
+        "resourceIncome": 36,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District West",
+        "bonus": "Secret Base",
+        "resourceIncome": 52,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Station",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 48,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Alpha",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 49,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Park",
+        "bonus": "Morale Boost",
+        "resourceIncome": 36,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub South",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 76,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Plaza",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 41,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown South",
+        "bonus": "Income Surge",
+        "resourceIncome": 74,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks Beta",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 100,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Edge",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 43,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District Shore",
+        "bonus": "Strategy Training",
+        "resourceIncome": 100,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Delta",
+        "bonus": "Armory Boost",
+        "resourceIncome": 32,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks District",
+        "bonus": "Income Surge",
+        "resourceIncome": 83,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Edge",
+        "bonus": "Income Boost",
+        "resourceIncome": 44,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs North",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 84,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor North",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 97,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Hub",
+        "bonus": "Income Boost",
+        "resourceIncome": 89,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub East",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 97,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot South",
+        "bonus": "Income Boost",
+        "resourceIncome": 18,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Shore",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 53,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "University District Beta",
+        "bonus": "Rare Items",
+        "resourceIncome": 76,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Center",
+        "bonus": "Income Boost",
+        "resourceIncome": 72,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Alpha",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 98,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "University District South",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 64,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Shore",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 73,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Delta",
+        "bonus": "Hidden Base",
+        "resourceIncome": 72,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Station",
+        "bonus": "Hidden Base",
+        "resourceIncome": 63,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Peak",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 74,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Core",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 41,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Beta",
+        "bonus": "Steady Income",
+        "resourceIncome": 28,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone Beta",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 62,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Plaza",
+        "bonus": "Income Boost",
+        "resourceIncome": 89,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Plaza",
+        "bonus": "Rare Items",
+        "resourceIncome": 80,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Shore",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 21,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "University District Park",
+        "bonus": "Secret Base",
+        "resourceIncome": 67,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District Plaza",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 16,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District West",
+        "bonus": "Strategy Training",
+        "resourceIncome": 27,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks East",
+        "bonus": "Defense Boost",
+        "resourceIncome": 47,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Center",
+        "bonus": "Morale Boost",
+        "resourceIncome": 40,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Center",
+        "bonus": "Hidden Base",
+        "resourceIncome": 18,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Plaza",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 16,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Core",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 60,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Front",
+        "bonus": "Rare Items",
+        "resourceIncome": 29,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates East",
+        "bonus": "Income Boost",
+        "resourceIncome": 55,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks West",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 68,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "University District North",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 78,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Peak",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 77,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Docks North",
+        "bonus": "Hidden Base",
+        "resourceIncome": 81,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Center",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 87,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Shore",
+        "bonus": "Armory Boost",
+        "resourceIncome": 32,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District South",
+        "bonus": "Steady Income",
+        "resourceIncome": 14,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs West",
+        "bonus": "Income Surge",
+        "resourceIncome": 56,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Beta",
+        "bonus": "Steady Income",
+        "resourceIncome": 66,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Station",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 97,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Core",
+        "bonus": "Secret Base",
+        "resourceIncome": 48,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery Hub",
+        "bonus": "Income Boost",
+        "resourceIncome": 66,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Center",
+        "bonus": "Steady Income",
+        "resourceIncome": 36,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Edge",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 80,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks Station",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 98,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Beta",
+        "bonus": "Income Boost",
+        "resourceIncome": 11,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress East",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 90,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Station",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 10,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Beta",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 55,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone District",
+        "bonus": "Steady Income",
+        "resourceIncome": 98,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Edge",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 53,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Core",
+        "bonus": "Income Surge",
+        "resourceIncome": 100,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress West",
+        "bonus": "Morale Boost",
+        "resourceIncome": 82,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown District",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 86,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub District",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 51,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Park",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 58,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Front",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 25,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown West",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 30,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Edge",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 12,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Center",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 98,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "University District North",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 56,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Shore",
+        "bonus": "Hidden Base",
+        "resourceIncome": 52,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Center",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 60,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Valley",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 34,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks Valley",
+        "bonus": "Income Boost",
+        "resourceIncome": 24,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Alpha",
+        "bonus": "Income Boost",
+        "resourceIncome": 49,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Plaza",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 70,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Docks West",
+        "bonus": "Income Boost",
+        "resourceIncome": 20,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown North",
+        "bonus": "Secret Base",
+        "resourceIncome": 89,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone Valley",
+        "bonus": "Rare Items",
+        "resourceIncome": 12,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "University District Shore",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 82,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Shore",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 87,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery Peak",
+        "bonus": "Income Boost",
+        "resourceIncome": 84,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone District",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 97,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery West",
+        "bonus": "Income Boost",
+        "resourceIncome": 62,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks Delta",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 48,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Beta",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 51,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Front",
+        "bonus": "Defense Boost",
+        "resourceIncome": 78,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Peak",
+        "bonus": "Strategy Training",
+        "resourceIncome": 55,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Valley",
+        "bonus": "Steady Income",
+        "resourceIncome": 16,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone North",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 16,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Center",
+        "bonus": "Morale Boost",
+        "resourceIncome": 11,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown North",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 16,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot North",
+        "bonus": "Armory Boost",
+        "resourceIncome": 92,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Shore",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 43,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Hub",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 31,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Plaza",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 92,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "University District Peak",
+        "bonus": "Secret Base",
+        "resourceIncome": 35,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Edge",
+        "bonus": "Strategy Training",
+        "resourceIncome": 56,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Station",
+        "bonus": "Hidden Base",
+        "resourceIncome": 50,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Center",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 92,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory North",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 48,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone Edge",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 38,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market District",
+        "bonus": "Armory Boost",
+        "resourceIncome": 59,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Shore",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 29,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Peak",
+        "bonus": "Hidden Base",
+        "resourceIncome": 94,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Station",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 77,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Front",
+        "bonus": "Income Surge",
+        "resourceIncome": 23,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Front",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 61,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown South",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 11,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "University District West",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 76,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs North",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 83,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery Shore",
+        "bonus": "Armory Boost",
+        "resourceIncome": 23,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor South",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 99,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks Station",
+        "bonus": "Defense Boost",
+        "resourceIncome": 58,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Peak",
+        "bonus": "Rare Items",
+        "resourceIncome": 95,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District South",
+        "bonus": "Morale Boost",
+        "resourceIncome": 29,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Beta",
+        "bonus": "Strategy Training",
+        "resourceIncome": 86,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Shore",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 17,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row District",
+        "bonus": "Steady Income",
+        "resourceIncome": 15,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Center",
+        "bonus": "Steady Income",
+        "resourceIncome": 25,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Plaza",
+        "bonus": "Rare Items",
+        "resourceIncome": 24,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Docks East",
+        "bonus": "Secret Base",
+        "resourceIncome": 11,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone Hub",
+        "bonus": "Hidden Base",
+        "resourceIncome": 67,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery District",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 32,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks Station",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 24,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost West",
+        "bonus": "Defense Boost",
+        "resourceIncome": 26,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Plaza",
+        "bonus": "Income Surge",
+        "resourceIncome": 11,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "University District Plaza",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 45,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown North",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 46,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost Apex",
+        "bonus": "Income Boost",
+        "resourceIncome": 26,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Hub",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 37,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Station",
+        "bonus": "Steady Income",
+        "resourceIncome": 54,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot East",
+        "bonus": "Defense Boost",
+        "resourceIncome": 31,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Delta",
+        "bonus": "Armory Boost",
+        "resourceIncome": 79,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone District",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 60,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Edge",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 19,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Plaza",
+        "bonus": "Defense Boost",
+        "resourceIncome": 99,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District Center",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 26,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market South",
+        "bonus": "Hidden Base",
+        "resourceIncome": 31,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks Beta",
+        "bonus": "Morale Boost",
+        "resourceIncome": 47,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress South",
+        "bonus": "Morale Boost",
+        "resourceIncome": 79,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Delta",
+        "bonus": "Strategy Training",
+        "resourceIncome": 32,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery Valley",
+        "bonus": "Rare Items",
+        "resourceIncome": 31,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Delta",
+        "bonus": "Income Surge",
+        "resourceIncome": 86,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Apex",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 25,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone Center",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 43,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Center",
+        "bonus": "Morale Boost",
+        "resourceIncome": 38,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Valley",
+        "bonus": "Hidden Base",
+        "resourceIncome": 20,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Delta",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 15,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Station",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 43,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Delta",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 36,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown South",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 30,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone Beta",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 93,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Peak",
+        "bonus": "Income Boost",
+        "resourceIncome": 36,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown West",
+        "bonus": "Income Boost",
+        "resourceIncome": 63,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Delta",
+        "bonus": "Rare Items",
+        "resourceIncome": 87,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates East",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 32,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Front",
+        "bonus": "Strategy Training",
+        "resourceIncome": 87,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Hub",
+        "bonus": "Defense Boost",
+        "resourceIncome": 73,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Apex",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 83,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Edge",
+        "bonus": "Armory Boost",
+        "resourceIncome": 34,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Plaza",
+        "bonus": "Hidden Base",
+        "resourceIncome": 59,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Hub",
+        "bonus": "Steady Income",
+        "resourceIncome": 29,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown West",
+        "bonus": "Hidden Base",
+        "resourceIncome": 48,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone Delta",
+        "bonus": "Secret Base",
+        "resourceIncome": 80,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown West",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 62,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Plaza",
+        "bonus": "Morale Boost",
+        "resourceIncome": 45,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Core",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 16,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown West",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 66,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Edge",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 34,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery North",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 100,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Docks West",
+        "bonus": "Income Surge",
+        "resourceIncome": 82,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery Apex",
+        "bonus": "Morale Boost",
+        "resourceIncome": 41,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Core",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 69,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Center",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 24,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor West",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 13,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery Shore",
+        "bonus": "Rare Items",
+        "resourceIncome": 48,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Park",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 68,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Alpha",
+        "bonus": "Secret Base",
+        "resourceIncome": 98,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot North",
+        "bonus": "Income Surge",
+        "resourceIncome": 69,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Station",
+        "bonus": "Strategy Training",
+        "resourceIncome": 71,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Station",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 99,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Alpha",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 64,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress West",
+        "bonus": "Armory Boost",
+        "resourceIncome": 68,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Valley",
+        "bonus": "Income Boost",
+        "resourceIncome": 37,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone Edge",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 73,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Beta",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 37,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Valley",
+        "bonus": "Strategy Training",
+        "resourceIncome": 87,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Plaza",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 44,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub South",
+        "bonus": "Income Boost",
+        "resourceIncome": 45,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Park",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 49,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates West",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 50,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory West",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 78,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown District",
+        "bonus": "Hidden Base",
+        "resourceIncome": 31,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Shore",
+        "bonus": "Hidden Base",
+        "resourceIncome": 91,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Apex",
+        "bonus": "Income Boost",
+        "resourceIncome": 71,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks Beta",
+        "bonus": "Secret Base",
+        "resourceIncome": 32,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Edge",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 90,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Front",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 63,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Apex",
+        "bonus": "Income Boost",
+        "resourceIncome": 23,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Peak",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 88,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks East",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 15,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "University District District",
+        "bonus": "Secret Base",
+        "resourceIncome": 28,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery District",
+        "bonus": "Morale Boost",
+        "resourceIncome": 86,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Shore",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 96,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Valley",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 80,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Station",
+        "bonus": "Secret Base",
+        "resourceIncome": 40,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District West",
+        "bonus": "Morale Boost",
+        "resourceIncome": 27,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Plaza",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 32,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Shore",
+        "bonus": "Steady Income",
+        "resourceIncome": 59,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Park",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 93,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Alpha",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 49,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery East",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 50,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress South",
+        "bonus": "Hidden Base",
+        "resourceIncome": 45,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Plaza",
+        "bonus": "Defense Boost",
+        "resourceIncome": 60,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Shore",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 44,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone South",
+        "bonus": "Hidden Base",
+        "resourceIncome": 71,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Shore",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 78,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Docks West",
+        "bonus": "Steady Income",
+        "resourceIncome": 62,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery Front",
+        "bonus": "Steady Income",
+        "resourceIncome": 48,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost South",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 73,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone Beta",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 78,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "University District West",
+        "bonus": "Morale Boost",
+        "resourceIncome": 95,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Front",
+        "bonus": "Income Boost",
+        "resourceIncome": 26,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown West",
+        "bonus": "Hidden Base",
+        "resourceIncome": 96,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Valley",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 56,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District Apex",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 79,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Apex",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 96,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Delta",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 33,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Hub",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 51,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District Park",
+        "bonus": "Income Surge",
+        "resourceIncome": 37,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Beta",
+        "bonus": "Income Boost",
+        "resourceIncome": 18,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory East",
+        "bonus": "Income Surge",
+        "resourceIncome": 33,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown North",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 11,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Beta",
+        "bonus": "Steady Income",
+        "resourceIncome": 42,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Edge",
+        "bonus": "Steady Income",
+        "resourceIncome": 81,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Plaza",
+        "bonus": "Steady Income",
+        "resourceIncome": 40,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District Core",
+        "bonus": "Rare Items",
+        "resourceIncome": 21,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks Core",
+        "bonus": "Income Surge",
+        "resourceIncome": 12,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Delta",
+        "bonus": "Defense Boost",
+        "resourceIncome": 82,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown East",
+        "bonus": "Rare Items",
+        "resourceIncome": 78,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot East",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 20,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Edge",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 40,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost East",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 52,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Park",
+        "bonus": "Rare Items",
+        "resourceIncome": 45,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Plaza",
+        "bonus": "Rare Items",
+        "resourceIncome": 62,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Beta",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 17,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery Center",
+        "bonus": "Hidden Base",
+        "resourceIncome": 54,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market East",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 20,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Center",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 64,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone Edge",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 28,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Front",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 81,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Peak",
+        "bonus": "Armory Boost",
+        "resourceIncome": 96,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market District",
+        "bonus": "Income Surge",
+        "resourceIncome": 77,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Shore",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 34,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks District",
+        "bonus": "Rare Items",
+        "resourceIncome": 29,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Edge",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 80,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery District",
+        "bonus": "Steady Income",
+        "resourceIncome": 47,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Valley",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 53,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Hub",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 14,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Plaza",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 68,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Park",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 20,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Plaza",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 81,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Edge",
+        "bonus": "Steady Income",
+        "resourceIncome": 19,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Peak",
+        "bonus": "Rare Items",
+        "resourceIncome": 41,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Peak",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 54,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Front",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 82,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Alpha",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 40,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Plaza",
+        "bonus": "Defense Boost",
+        "resourceIncome": 42,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "University District District",
+        "bonus": "Hidden Base",
+        "resourceIncome": 69,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "University District Front",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 52,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market North",
+        "bonus": "Income Boost",
+        "resourceIncome": 90,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Plaza",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 20,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Alpha",
+        "bonus": "Strategy Training",
+        "resourceIncome": 27,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Edge",
+        "bonus": "Morale Boost",
+        "resourceIncome": 59,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost Peak",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 90,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone East",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 36,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery Delta",
+        "bonus": "Hidden Base",
+        "resourceIncome": 50,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Edge",
+        "bonus": "Defense Boost",
+        "resourceIncome": 12,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks Front",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 89,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "University District Hub",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 73,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Alpha",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 96,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown District",
+        "bonus": "Morale Boost",
+        "resourceIncome": 54,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs North",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 61,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Hub",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 65,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Peak",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 65,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone Beta",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 19,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory South",
+        "bonus": "Armory Boost",
+        "resourceIncome": 47,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Shore",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 61,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub East",
+        "bonus": "Hidden Base",
+        "resourceIncome": 64,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Core",
+        "bonus": "Armory Boost",
+        "resourceIncome": 42,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery Station",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 11,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "University District West",
+        "bonus": "Secret Base",
+        "resourceIncome": 48,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Core",
+        "bonus": "Defense Boost",
+        "resourceIncome": 81,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress District",
+        "bonus": "Income Surge",
+        "resourceIncome": 17,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory South",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 97,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Plaza",
+        "bonus": "Defense Boost",
+        "resourceIncome": 25,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost Front",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 29,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Shore",
+        "bonus": "Defense Boost",
+        "resourceIncome": 24,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Apex",
+        "bonus": "Defense Boost",
+        "resourceIncome": 90,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Alpha",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 56,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Plaza",
+        "bonus": "Secret Base",
+        "resourceIncome": 30,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Peak",
+        "bonus": "Steady Income",
+        "resourceIncome": 14,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks Front",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 73,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Park",
+        "bonus": "Rare Items",
+        "resourceIncome": 16,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Valley",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 10,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Center",
+        "bonus": "Strategy Training",
+        "resourceIncome": 85,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone Apex",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 45,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Beta",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 19,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery Park",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 72,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub District",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 42,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery Center",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 100,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks Delta",
+        "bonus": "Income Surge",
+        "resourceIncome": 58,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Edge",
+        "bonus": "Morale Boost",
+        "resourceIncome": 76,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "University District Center",
+        "bonus": "Morale Boost",
+        "resourceIncome": 93,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Station",
+        "bonus": "Strategy Training",
+        "resourceIncome": 57,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates North",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 11,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District East",
+        "bonus": "Strategy Training",
+        "resourceIncome": 34,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Delta",
+        "bonus": "Secret Base",
+        "resourceIncome": 92,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Docks East",
+        "bonus": "Strategy Training",
+        "resourceIncome": 91,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Center",
+        "bonus": "Rare Items",
+        "resourceIncome": 96,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Alpha",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 98,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Docks District",
+        "bonus": "Secret Base",
+        "resourceIncome": 44,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost Edge",
+        "bonus": "Secret Base",
+        "resourceIncome": 79,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Hub",
+        "bonus": "Strategy Training",
+        "resourceIncome": 10,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Beta",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 90,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Plaza",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 89,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District North",
+        "bonus": "Income Surge",
+        "resourceIncome": 63,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates West",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 16,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District District",
+        "bonus": "Rare Items",
+        "resourceIncome": 63,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Core",
+        "bonus": "Steady Income",
+        "resourceIncome": 55,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks Shore",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 76,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Peak",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 91,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Alpha",
+        "bonus": "Income Surge",
+        "resourceIncome": 84,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Hub",
+        "bonus": "Hidden Base",
+        "resourceIncome": 32,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Beta",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 71,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Front",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 94,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs West",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 47,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Front",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 36,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Center",
+        "bonus": "Morale Boost",
+        "resourceIncome": 51,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Hub",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 18,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Plaza",
+        "bonus": "Defense Boost",
+        "resourceIncome": 54,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Shore",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 52,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Edge",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 55,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Center",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 91,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Plaza",
+        "bonus": "Steady Income",
+        "resourceIncome": 12,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Park",
+        "bonus": "Defense Boost",
+        "resourceIncome": 44,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Delta",
+        "bonus": "Secret Base",
+        "resourceIncome": 73,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Beta",
+        "bonus": "Hidden Base",
+        "resourceIncome": 82,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Valley",
+        "bonus": "Steady Income",
+        "resourceIncome": 10,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone West",
+        "bonus": "Steady Income",
+        "resourceIncome": 24,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Docks North",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 91,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Beta",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 58,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Front",
+        "bonus": "Rare Items",
+        "resourceIncome": 21,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Delta",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 77,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery Valley",
+        "bonus": "Steady Income",
+        "resourceIncome": 84,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone Plaza",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 14,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Park",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 14,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Park",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 11,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Peak",
+        "bonus": "Morale Boost",
+        "resourceIncome": 54,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Valley",
+        "bonus": "Hidden Base",
+        "resourceIncome": 59,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost Delta",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 87,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Edge",
+        "bonus": "Income Surge",
+        "resourceIncome": 15,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Beta",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 87,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Front",
+        "bonus": "Income Surge",
+        "resourceIncome": 88,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Valley",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 17,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Center",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 49,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District West",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 33,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Plaza",
+        "bonus": "Morale Boost",
+        "resourceIncome": 84,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Hub",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 33,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Valley",
+        "bonus": "Morale Boost",
+        "resourceIncome": 19,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone Alpha",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 13,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone Delta",
+        "bonus": "Armory Boost",
+        "resourceIncome": 53,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Peak",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 20,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "University District North",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 87,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row District",
+        "bonus": "Income Boost",
+        "resourceIncome": 50,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "University District Valley",
+        "bonus": "Defense Boost",
+        "resourceIncome": 59,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost Beta",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 78,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Park",
+        "bonus": "Hidden Base",
+        "resourceIncome": 42,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District South",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 74,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Alpha",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 82,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Center",
+        "bonus": "Hidden Base",
+        "resourceIncome": 38,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Station",
+        "bonus": "Strategy Training",
+        "resourceIncome": 12,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery Beta",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 31,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates West",
+        "bonus": "Steady Income",
+        "resourceIncome": 79,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Front",
+        "bonus": "Steady Income",
+        "resourceIncome": 38,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Front",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 49,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "University District Front",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 15,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Center",
+        "bonus": "Strategy Training",
+        "resourceIncome": 15,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Hub",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 40,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Park",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 14,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress East",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 86,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub East",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 67,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Front",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 84,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Center",
+        "bonus": "Armory Boost",
+        "resourceIncome": 99,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery North",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 51,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot North",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 49,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Valley",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 14,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Plaza",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 81,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Peak",
+        "bonus": "Morale Boost",
+        "resourceIncome": 41,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone District",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 45,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Station",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 49,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Park",
+        "bonus": "Defense Boost",
+        "resourceIncome": 23,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery Apex",
+        "bonus": "Strategy Training",
+        "resourceIncome": 18,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Front",
+        "bonus": "Income Surge",
+        "resourceIncome": 83,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates South",
+        "bonus": "Income Boost",
+        "resourceIncome": 41,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown West",
+        "bonus": "Strategy Training",
+        "resourceIncome": 93,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Peak",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 58,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Shore",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 46,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Edge",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 59,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Beta",
+        "bonus": "Income Boost",
+        "resourceIncome": 21,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown East",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 80,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Alpha",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 63,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates West",
+        "bonus": "Income Surge",
+        "resourceIncome": 99,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone Station",
+        "bonus": "Defense Boost",
+        "resourceIncome": 13,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Peak",
+        "bonus": "Armory Boost",
+        "resourceIncome": 68,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Edge",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 33,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Shore",
+        "bonus": "Armory Boost",
+        "resourceIncome": 52,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Alpha",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 30,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Center",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 15,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Park",
+        "bonus": "Income Boost",
+        "resourceIncome": 19,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Edge",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 81,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Valley",
+        "bonus": "Secret Base",
+        "resourceIncome": 12,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Front",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 44,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Park",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 75,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks Park",
+        "bonus": "Strategy Training",
+        "resourceIncome": 67,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Delta",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 34,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Valley",
+        "bonus": "Strategy Training",
+        "resourceIncome": 77,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Valley",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 82,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Beta",
+        "bonus": "Hidden Base",
+        "resourceIncome": 82,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District Edge",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 49,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Edge",
+        "bonus": "Steady Income",
+        "resourceIncome": 97,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Valley",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 67,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks Park",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 95,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Hub",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 61,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone North",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 79,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District District",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 79,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown West",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 40,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Core",
+        "bonus": "Income Surge",
+        "resourceIncome": 30,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone Park",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 43,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery West",
+        "bonus": "Steady Income",
+        "resourceIncome": 88,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District Edge",
+        "bonus": "Income Boost",
+        "resourceIncome": 57,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost East",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 66,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor West",
+        "bonus": "Secret Base",
+        "resourceIncome": 65,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Station",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 94,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Beta",
+        "bonus": "Steady Income",
+        "resourceIncome": 12,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District Edge",
+        "bonus": "Income Surge",
+        "resourceIncome": 72,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Beta",
+        "bonus": "Strategy Training",
+        "resourceIncome": 72,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Alpha",
+        "bonus": "Armory Boost",
+        "resourceIncome": 90,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Core",
+        "bonus": "Income Surge",
+        "resourceIncome": 93,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost Apex",
+        "bonus": "Hidden Base",
+        "resourceIncome": 37,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks North",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 73,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "University District District",
+        "bonus": "Strategy Training",
+        "resourceIncome": 59,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Plaza",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 93,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Plaza",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 45,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost North",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 32,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Alpha",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 12,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Plaza",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 44,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District West",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 59,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Peak",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 78,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates District",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 45,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot South",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 82,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Core",
+        "bonus": "Hidden Base",
+        "resourceIncome": 50,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "University District District",
+        "bonus": "Morale Boost",
+        "resourceIncome": 67,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery West",
+        "bonus": "Morale Boost",
+        "resourceIncome": 52,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Apex",
+        "bonus": "Defense Boost",
+        "resourceIncome": 52,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Alpha",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 86,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Apex",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 38,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Hub",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 20,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market South",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 29,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Peak",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 10,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery Apex",
+        "bonus": "Income Surge",
+        "resourceIncome": 36,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory District",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 33,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Delta",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 17,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone Park",
+        "bonus": "Secret Base",
+        "resourceIncome": 68,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Center",
+        "bonus": "Strategy Training",
+        "resourceIncome": 93,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks Peak",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 32,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost Delta",
+        "bonus": "Armory Boost",
+        "resourceIncome": 14,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Core",
+        "bonus": "Hidden Base",
+        "resourceIncome": 64,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone Core",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 36,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery Park",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 21,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Hub",
+        "bonus": "Defense Boost",
+        "resourceIncome": 38,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Center",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 77,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Plaza",
+        "bonus": "Morale Boost",
+        "resourceIncome": 10,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Delta",
+        "bonus": "Income Boost",
+        "resourceIncome": 59,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory District",
+        "bonus": "Income Surge",
+        "resourceIncome": 58,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market South",
+        "bonus": "Morale Boost",
+        "resourceIncome": 47,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Front",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 50,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Industrial Zone Front",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 76,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row West",
+        "bonus": "Rare Items",
+        "resourceIncome": 37,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District South",
+        "bonus": "Rare Items",
+        "resourceIncome": 79,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Front",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 30,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Plaza",
+        "bonus": "Secret Base",
+        "resourceIncome": 51,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Apex",
+        "bonus": "Morale Boost",
+        "resourceIncome": 55,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Beta",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 80,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery North",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 29,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District West",
+        "bonus": "Morale Boost",
+        "resourceIncome": 80,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Edge",
+        "bonus": "Secret Base",
+        "resourceIncome": 71,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot South",
+        "bonus": "Morale Boost",
+        "resourceIncome": 39,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Mountain Fortress Core",
+        "bonus": "Steady Income",
+        "resourceIncome": 40,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor North",
+        "bonus": "Strategy Training",
+        "resourceIncome": 67,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost South",
+        "bonus": "Income Surge",
+        "resourceIncome": 92,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs West",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 64,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost West",
+        "bonus": "Income Surge",
+        "resourceIncome": 42,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Core",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 34,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Plaza",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 61,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Valley",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 46,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Park",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 84,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Beta",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 21,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Valley",
+        "bonus": "Steady Income",
+        "resourceIncome": 81,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Delta",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 23,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot District",
+        "bonus": "Income Boost",
+        "resourceIncome": 36,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District South",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 57,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates North",
+        "bonus": "Rare Items",
+        "resourceIncome": 35,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Peak",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 58,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery District",
+        "bonus": "Income Boost",
+        "resourceIncome": 32,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Park",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 67,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Beta",
+        "bonus": "Income Boost",
+        "resourceIncome": 77,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Shore",
+        "bonus": "Armory Boost",
+        "resourceIncome": 17,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub West",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 95,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown East",
+        "bonus": "Income Boost",
+        "resourceIncome": 62,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Station",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 19,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks Valley",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 46,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Delta",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 21,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Peak",
+        "bonus": "Efficiency Upgrade",
+        "resourceIncome": 59,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Alpha",
+        "bonus": "Strategy Training",
+        "resourceIncome": 77,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks Valley",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 90,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub Edge",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 54,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Plaza",
+        "bonus": "Strategy Training",
+        "resourceIncome": 22,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Front",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 49,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "University District Shore",
+        "bonus": "Income Boost",
+        "resourceIncome": 28,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs South",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 96,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Delta",
+        "bonus": "Morale Boost",
+        "resourceIncome": 57,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Financial District Delta",
+        "bonus": "Income Boost",
+        "resourceIncome": 11,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Valley",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 76,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Beta",
+        "bonus": "Steady Income",
+        "resourceIncome": 54,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Railway Depot Shore",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 81,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Docks Delta",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 50,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Plaza",
+        "bonus": "Hidden Base",
+        "resourceIncome": 84,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Downtown Hub",
+        "bonus": "Defense Boost",
+        "resourceIncome": 41,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost Front",
+        "bonus": "Morale Boost",
+        "resourceIncome": 44,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Peak",
+        "bonus": "Secret Base",
+        "resourceIncome": 21,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Uptown Front",
+        "bonus": "Smuggling Hub",
+        "resourceIncome": 16,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Front",
+        "bonus": "Hidden Base",
+        "resourceIncome": 91,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "University District Alpha",
+        "bonus": "Secret Base",
+        "resourceIncome": 40,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Oil Refinery North",
+        "bonus": "Resource Discounts",
+        "resourceIncome": 28,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "University District West",
+        "bonus": "Morale Boost",
+        "resourceIncome": 17,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown South",
+        "bonus": "Reputation Boost",
+        "resourceIncome": 52,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Park",
+        "bonus": "Hidden Base",
+        "resourceIncome": 65,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Red Light District Shore",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 23,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Tech Hub South",
+        "bonus": "Morale Boost",
+        "resourceIncome": 54,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Hub",
+        "bonus": "Strategy Training",
+        "resourceIncome": 71,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Chinatown Station",
+        "bonus": "Strategy Training",
+        "resourceIncome": 51,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Luxury Estates Core",
+        "bonus": "Defense Reinforcements",
+        "resourceIncome": 77,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Core",
+        "bonus": "Risky Income Boost",
+        "resourceIncome": 99,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Station",
+        "bonus": "Steady Income",
+        "resourceIncome": 44,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Valley",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 13,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Abandoned Factory Plaza",
+        "bonus": "Ultimate Defense",
+        "resourceIncome": 53,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Forest Outpost Front",
+        "bonus": "High Resource Gain",
+        "resourceIncome": 69,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Suburbs Edge",
+        "bonus": "Income Surge",
+        "resourceIncome": 65,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Edge",
+        "bonus": "Rare Items",
+        "resourceIncome": 70,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Prison Blocks Valley",
+        "bonus": "Income Surge",
+        "resourceIncome": 27,
+        "status": "controlled",
+        "seasonal": null
+    },
+    {
+        "name": "Harbor Core",
+        "bonus": "Sabotage Power Boost",
+        "resourceIncome": 48,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Black Market Peak",
+        "bonus": "Strategy Training",
+        "resourceIncome": 67,
+        "status": "free",
+        "seasonal": null
+    },
+    {
+        "name": "Casino Row Station",
+        "bonus": "Balanced Resources",
+        "resourceIncome": 17,
+        "status": "controlled",
+        "seasonal": null
+    }
+]
