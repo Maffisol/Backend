@@ -8,14 +8,13 @@ const cors = require('cors');
 const { startJailCountdown } = require('./helpers/jailTimer');
 const killRoutes = require('./routes/killRoutes'); // Import the new kill route
 const Family = require('./models/family'); // Zorg ervoor dat dit pad correct is
-const frontendUrl = process.env.FRONTEND_URL;
 
 // Initialize Express
 const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
     cors: {
-        origin: frontendUrl, 
+        origin: process.env.FRONTEND_URL, 
         methods: ["GET", "POST"],
         allowedHeaders: ["Content-Type", "Authorization"],
         credentials: true,
@@ -24,7 +23,7 @@ const io = socketIo(server, {
 
 // CORS Middleware
 app.use(cors({
-  origin: frontendUrl,   // Replace with your actual frontend URL
+  origin: process.env.FRONTEND_URL,   // Replace with your actual frontend URL
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,  // Allow cookies if needed
