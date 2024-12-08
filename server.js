@@ -14,7 +14,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
     cors: {
-        origin: "*",
+        origin: "https://frontend-psi-tawny.vercel.app/",
         methods: ["GET", "POST"],
         allowedHeaders: ["Content-Type", "Authorization"],
         credentials: true,
@@ -23,11 +23,12 @@ const io = socketIo(server, {
 
 // CORS Middleware
 app.use(cors({
-    origin: "*",  
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-    credentials: true,
+  origin: "https://frontend-psi-tawny.vercel.app/",  // Replace with your actual frontend URL
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: true,  // Allow cookies if needed
 }));
+
 
 // Middleware
 app.use(express.json());
