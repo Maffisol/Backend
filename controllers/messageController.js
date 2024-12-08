@@ -1,4 +1,4 @@
-const Player = require("../models/player");
+const Player = require("../models/Player");
 const { ChatRequest } = require('../models/chatMessage');
 const { Chat } = require('../models/Chat');  // Add Chat model for storing chat data
 
