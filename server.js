@@ -23,7 +23,7 @@ const io = socketIo(server, {
 
 // CORS Middleware
 app.use(cors({
-    origin: "*",  
+    origin: "https://frontend-psi-tawny.vercel.app",  
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
