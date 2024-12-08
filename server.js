@@ -8,7 +8,7 @@ const cors = require('cors');
 const { startJailCountdown } = require('./helpers/jailTimer');
 const killRoutes = require('./routes/killRoutes'); // Import the new kill route
 const Family = require('./models/family'); // Zorg ervoor dat dit pad correct is
-const frontendUrl = process.env.FRONTEND_URL
+const frontendUrl = process.env.FRONTEND_URL;
 
 // Initialize Express
 const app = express();
