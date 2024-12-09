@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 const Territory = require('../models/territory');
 const Family = require('../models/family');
-const Player = require('../models/player'); // Zorg dat het pad naar je Player-model correct is
+const Player = require('../models/Player'); // Zorg dat het pad naar je Player-model correct is
 const { checkCooldown, setCooldown } = require('../helpers/cooldownhelper');
 const { sendTerritoryUpdate, sendLeaderboardUpdate, sendFamilyUpdate } = require('../helpers/socketEvents');
 

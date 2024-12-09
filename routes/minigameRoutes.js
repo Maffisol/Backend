@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Player = require('../models/player');
+const Player = require('../models/Player');
 
 // Route: Attempt smuggling
 router.post('/smuggling', async (req, res) => {
