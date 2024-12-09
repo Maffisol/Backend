@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
 const Family = require('../models/family');
-const Player = require('../models/player');
+const Player = require('../models/Player');
 
 
 // Get all families with members' usernames by family ID
