@@ -3,7 +3,7 @@ const router = express.Router();
 const Player = require('../models/Player');
 
 // POST update click count and experience
-router.post('/hitter', async (req, res) => {
+router.post('/', async (req, res) => {
     const { walletAddress, clickCount } = req.body;
 
     try {
