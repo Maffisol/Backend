@@ -14,7 +14,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
     cors: {
-        origin: "https://it-memo.nl",
+        origin: process.env.FRONTEND_URL, 
         methods: ["GET", "POST"],
         allowedHeaders: ["Content-Type", "Authorization"],
         credentials: true,
@@ -23,7 +23,7 @@ const io = socketIo(server, {
 
 // CORS Middleware
 app.use(cors({
-  origin: "https://it-memo.nl",  // Replace with your actual frontend URL
+  origin: process.env.FRONTEND_URL,   // Replace with your actual frontend URL
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,  // Allow cookies if needed
