@@ -183,13 +183,13 @@ router.post('/release-jail/:walletAddress', async (req, res) => {
 // GET - Retrieve all players currently in jail
 router.get('/jail-list', async (req, res) => {
     try {
-        // Filter players who are in jail and either have no family or the family field is empty
+        // Filter players who are in jail and have no family (family is null)
         const playersInJail = await Player.find({ 
             "jail.isInJail": true,
-            "family": null // Dit controleert alleen op null, niet op een lege string
+            "family": null // Only search for players with no family
         }).select('username rank jail family walletAddress');
-        
 
+        // Format players' data with proper jailReleaseTime
         const formattedPlayers = playersInJail.map((player) => ({
             ...player.toObject(),
             jail: {
@@ -200,12 +200,14 @@ router.get('/jail-list', async (req, res) => {
             },
         }));
 
+        // Send back the formatted data
         res.status(200).json(formattedPlayers);
     } catch (error) {
         console.error('Error fetching players in jail:', error);
-        res.status(500).json({ message: 'Internal Server Error' });
+        res.status(500).json({ message: 'Internal Server Error', error: error.message });
     }
 });
+
 
 
 // POST - Bail a player out of jail
