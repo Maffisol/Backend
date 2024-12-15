@@ -6,46 +6,15 @@ const Chat = require('../models/Chat'); // Add this line to import the Chat mode
 
 // Verstuur chat-uitnodiging
 router.post('/send', async (req, res) => {
-    const { inviterId, inviteeId } = req.body;
-    
-    try {
-        // Maak en sla de chat uitnodiging op
-        const invite = new ChatInvite({ inviterId, inviteeId });
-        await invite.save();
-  
-        // Haal de gegevens op van de inviter en invitee (bijvoorbeeld usernames)
-        const inviter = await Player.findById(inviterId);
-        const invitee = await Player.findById(inviteeId);
-  
-        // Als de inviter of invitee niet bestaat, geef dan een foutmelding
-        if (!inviter || !invitee) {
-            return res.status(404).json({ error: 'Inviter or invitee not found' });
-        }
-  
-        // Maak het bericht voor de uitnodigde speler
-        const messageContent = `${inviter.username} has invited you to a private chat.`;
-  
-        // Maak en sla het bericht op in de inbox van de invitee
-        const message = new Message({
-            recipientId: invitee._id,
-            content: messageContent,
-            type: 'chat-invite',
-            createdAt: new Date(),
-        });
-  
-        await message.save();
-  
-        res.status(200).json({
-            invite,
-            inviterUsername: inviter.username,
-            inviteeUsername: invitee.username,
-        });
-    } catch (error) {
-        console.error("Error in send chat invite route:", error);
-        res.status(500).json({ error: 'Failed to send invite' });
-    }
-  });
-  
+  const { inviterId, inviteeId } = req.body;
+  try {
+      const invite = new ChatInvite({ inviterId, inviteeId });
+      await invite.save();
+      res.status(200).json(invite);
+  } catch (error) {
+      res.status(500).json({ error: 'Failed to send invite' });
+  }
+});
 
 // Haal alle chat-uitnodigingen op voor een specifieke gebruiker
 router.get('/:userId', async (req, res) => {

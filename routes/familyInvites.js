@@ -53,20 +53,6 @@ router.post('/invite-member', async (req, res) => {
       });
 
       await invite.save();
-
-      // Create the message to send to the invitee's inbox
-      const messageContent = `You have been invited to join the family "${family.name}" by ${inviter.username}.`;
-
-      const message = new Message({
-          recipientId: invitee._id,
-          content: messageContent,
-          type: 'family-invite',
-          createdAt: new Date(),
-      });
-
-      // Save the message to the invitee's inbox
-      await message.save();
-
       res.status(200).json({
           invite,
           inviterUsername: inviter.username,
@@ -77,7 +63,6 @@ router.post('/invite-member', async (req, res) => {
       res.status(500).json({ error: 'Failed to send family invite' });
   }
 });
-
 
 // Fetch all pending family invites for a specific user (invitee)
 router.get('/:userId', async (req, res) => {
