@@ -206,40 +206,53 @@ router.post('/release-jail/:walletAddress', async (req, res) => {
 
 
 
-    // POST - Bail a player out of jail
-    router.post('/bailout/:walletAddress', async (req, res) => {
-        const { walletAddress } = req.params;
+// POST - Bail a player out of jail
+router.post('/bailout/:walletAddress/:familyMemberAddress?', async (req, res) => {
+    const { walletAddress, familyMemberAddress } = req.params;
 
-        try {
-            const player = await Player.findOne({ walletAddress });
-            if (!player) return res.status(404).json({ message: 'Player not found' });
+    try {
+        const bailer = await Player.findOne({ walletAddress });
+        if (!bailer) return res.status(404).json({ message: 'Bailer not found' });
 
-            const bailoutCost = calculateBailoutCost(player);
-            if (player.money < bailoutCost) {
-                return res.status(400).json({ message: 'Insufficient funds to bail out' });
-            }
+        // Als een specifieke familyMemberAddress is opgegeven
+        const targetAddress = familyMemberAddress || walletAddress; // Zelf uitkopen als familyMemberAddress niet is opgegeven
+        const targetPlayer = await Player.findOne({ walletAddress: targetAddress });
 
-            player.money -= bailoutCost;
-            player.jail.isInJail = false;
-            player.jail.jailReleaseTime = null;
+        if (!targetPlayer) return res.status(404).json({ message: 'Player to bail out not found' });
 
-            await player.save();
-
-            if (io) {
-                io.to(walletAddress).emit('jailStatusUpdated', {
-                    walletAddress,
-                    isInJail: false,
-                    jailReleaseTime: null,
-                });
-                console.log(`Player bailed out: ${walletAddress}`);
-            }
-
-            res.status(200).json({ message: 'Player bailed out successfully', remainingMoney: player.money });
-        } catch (error) {
-            console.error('Error bailing out player:', error);
-            res.status(500).json({ message: 'Internal Server Error' });
+        if (walletAddress === targetAddress) {
+            return res.status(400).json({ message: 'You cannot bail yourself out' });
         }
-    });
+
+        const bailoutCost = calculateBailoutCost(targetPlayer);
+        if (bailer.money < bailoutCost) {
+            return res.status(400).json({ message: `Insufficient funds to bail out. Cost: ${bailoutCost}` });
+        }
+
+        bailer.money -= bailoutCost;
+        targetPlayer.jail.isInJail = false;
+        targetPlayer.jail.jailReleaseTime = null;
+
+        await Promise.all([bailer.save(), targetPlayer.save()]);
+
+        if (io) {
+            io.to(targetAddress).emit('jailStatusUpdated', {
+                walletAddress: targetAddress,
+                isInJail: false,
+                jailReleaseTime: null,
+            });
+            console.log(`Player bailed out: ${targetAddress}`);
+        }
+
+        res.status(200).json({
+            message: `${targetPlayer.username} was successfully bailed out`,
+            remainingMoney: bailer.money,
+        });
+    } catch (error) {
+        console.error('Error bailing out player:', error);
+        res.status(500).json({ message: 'Internal Server Error' });
+    }
+});
 
     return router;
 };

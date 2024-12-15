@@ -10,6 +10,7 @@
         "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
         "@solana/web3.js": "^1.95.5",
         "axios": "^1.7.7",
+        "clsx": "^2.1.1",
         "cors": "^2.8.5",
         "dayjs": "^1.11.13",
         "dotenv": "^16.4.7",
