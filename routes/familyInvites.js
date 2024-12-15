@@ -68,6 +68,22 @@ router.post('/invite-member', async (req, res) => {
 });
 
 
+// In je backend route voor het ophalen van uitnodigingen:
+app.get('/getUserById/:userId', async (req, res) => {
+  try {
+    const user = await User.findById(req.params.userId);
+    if (!user) {
+      return res.status(404).send('User not found');
+    }
+    res.json({ username: user.username }); // Verzend de gebruikersnaam
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Error retrieving user');
+  }
+});
+
+
+
 // Fetch all pending family invites for a specific user (invitee)
 // Fetch all pending family invites for a specific user (invitee)
 router.get('/:userId', async (req, res) => {
