@@ -180,30 +180,34 @@ router.post('/release-jail/:walletAddress', async (req, res) => {
         }
     });
 
-    // GET - Retrieve all players currently in jail
-    router.get('/jail-list', async (req, res) => {
-        try {
-            const playersInJail = await Player.find({ "jail.isInJail": true }).select(
-                'username rank jail family walletAddress'
-            );
+// GET - Retrieve all players currently in jail
+router.get('/jail-list', async (req, res) => {
+    try {
+        // Filter players who are in jail and either have no family or the family field is empty
+        const playersInJail = await Player.find({ 
+            "jail.isInJail": true,
+            $or: [
+                { "family": null }, // Family is null
+                { "family": "" }    // Family is an empty string
+            ]
+        }).select('username rank jail family walletAddress');
 
-            const formattedPlayers = playersInJail.map((player) => ({
-                ...player.toObject(),
-                jail: {
-                    ...player.jail,
-                    jailReleaseTime: player.jail.jailReleaseTime
-                        ? new Date(player.jail.jailReleaseTime).toISOString()
-                        : null,
-                },
-            }));
+        const formattedPlayers = playersInJail.map((player) => ({
+            ...player.toObject(),
+            jail: {
+                ...player.jail,
+                jailReleaseTime: player.jail.jailReleaseTime
+                    ? new Date(player.jail.jailReleaseTime).toISOString()
+                    : null,
+            },
+        }));
 
-            res.status(200).json(formattedPlayers);
-        } catch (error) {
-            console.error('Error fetching players in jail:', error);
-            res.status(500).json({ message: 'Internal Server Error' });
-        }
-    });
-
+        res.status(200).json(formattedPlayers);
+    } catch (error) {
+        console.error('Error fetching players in jail:', error);
+        res.status(500).json({ message: 'Internal Server Error' });
+    }
+});
 
 
 // POST - Bail a player out of jail
