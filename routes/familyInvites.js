@@ -65,20 +65,18 @@ router.post('/invite-member', async (req, res) => {
 });
 
 // Fetch all pending family invites for a specific user (invitee)
-// Fetch all pending family invites for a specific user (invitee)
-router.get('/family-invites/:userId', async (req, res) => {
+router.get('/:userId', async (req, res) => {
   try {
     const invites = await FamilyInvite.find({ inviteeId: req.params.userId, status: 'pending' })
-      .populate('inviterId', 'username') // Haal de username van de inviter op
-      .populate('familyId', 'name'); // Haal de family name op
+      .populate({ path: 'inviterId', model: 'Player', select: 'username' }) // Explicitly use Player model
+      .populate({ path: 'familyId', model: 'Family', select: 'name' });
 
-    res.status(200).json(invites); // Verzend de invites met inviter username en family name
+    res.status(200).json(invites);
   } catch (error) {
-    console.error("Error fetching family invites:", error);
+    console.error("Error fetching invites:", error);
     res.status(500).json({ error: 'Failed to fetch family invites' });
   }
 });
-
 
 // Respond to family invite
 // Respond to family invite
