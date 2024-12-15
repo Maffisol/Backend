@@ -186,11 +186,9 @@ router.get('/jail-list', async (req, res) => {
         // Filter players who are in jail and either have no family or the family field is empty
         const playersInJail = await Player.find({ 
             "jail.isInJail": true,
-            $or: [
-                { "family": null }, // Family is null
-                { "family": "" }    // Family is an empty string
-            ]
+            "family": null // Dit controleert alleen op null, niet op een lege string
         }).select('username rank jail family walletAddress');
+        
 
         const formattedPlayers = playersInJail.map((player) => ({
             ...player.toObject(),
