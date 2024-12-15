@@ -6,6 +6,7 @@ const Family = require('../models/family'); // Importing the Family model
 
 // Invite a member to the family (primary invite route)
 // Invite a member to the family (primary invite route)
+// Invite a member to the family (primary invite route)
 router.post('/invite-member', async (req, res) => {
   const { inviterWalletAddress, inviteeUsername, familyId } = req.body;
 
@@ -50,6 +51,8 @@ router.post('/invite-member', async (req, res) => {
           inviterId: inviter._id,
           inviteeId: invitee._id,
           familyId: family._id,
+          inviterUsername: inviter.username, // Save the inviter's username
+          familyName: family.name, // Save the family name
       });
 
       await invite.save();
@@ -64,12 +67,22 @@ router.post('/invite-member', async (req, res) => {
   }
 });
 
+
+// Fetch all pending family invites for a specific user (invitee)
 // Fetch all pending family invites for a specific user (invitee)
 router.get('/:userId', async (req, res) => {
   try {
     const invites = await FamilyInvite.find({ inviteeId: req.params.userId, status: 'pending' })
-      .populate({ path: 'inviterId', model: 'Player', select: 'username' }) // Explicitly use Player model
-      .populate({ path: 'familyId', model: 'Family', select: 'name' });
+      .populate({ 
+        path: 'inviterId', 
+        model: 'Player', 
+        select: 'username' 
+      })
+      .populate({ 
+        path: 'familyId', 
+        model: 'Family', 
+        select: 'name' 
+      });
 
     res.status(200).json(invites);
   } catch (error) {
@@ -77,6 +90,7 @@ router.get('/:userId', async (req, res) => {
     res.status(500).json({ error: 'Failed to fetch family invites' });
   }
 });
+
 
 // Respond to family invite
 // Respond to family invite
