@@ -5,7 +5,6 @@ const Player = require('../models/Player'); // Importing the Player model
 const Family = require('../models/family'); // Importing the Family model
 
 // Invite a member to the family (primary invite route)
-// Invite a member to the family (primary invite route)
 router.post('/invite-member', async (req, res) => {
   const { inviterWalletAddress, inviteeUsername, familyId } = req.body;
 
