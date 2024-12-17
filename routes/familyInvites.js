@@ -6,7 +6,6 @@ const Family = require('../models/family'); // Importing the Family model
 
 // Invite a member to the family (primary invite route)
 // Invite a member to the family (primary invite route)
-// Invite a member to the family (primary invite route)
 router.post('/invite-member', async (req, res) => {
   const { inviterWalletAddress, inviteeUsername, familyId } = req.body;
 
@@ -51,8 +50,6 @@ router.post('/invite-member', async (req, res) => {
           inviterId: inviter._id,
           inviteeId: invitee._id,
           familyId: family._id,
-          inviterUsername: inviter.username, // Save the inviter's username
-          familyName: family.name, // Save the family name
       });
 
       await invite.save();
