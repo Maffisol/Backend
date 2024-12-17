@@ -18,13 +18,19 @@ router.post('/send', async (req, res) => {
 
 // Haal alle chat-uitnodigingen op voor een specifieke gebruiker
 router.get('/:userId', async (req, res) => {
-  try {
-      const invites = await ChatInvite.find({ inviteeId: req.params.userId });
+    try {
+      const invites = await ChatInvite.find({ inviteeId: req.params.userId })
+        .populate({ 
+          path: 'inviterId', 
+          model: 'Player', 
+          select: 'username'  // Populeer de username van de inviter
+        });
+  
       res.status(200).json(invites);
-  } catch (error) {
+    } catch (error) {
       res.status(500).json({ error: 'Failed to fetch chat invites' });
-  }
-});
+    }
+  });
 
 // Respond to a chat invite
 router.post('/respond', async (req, res) => {
