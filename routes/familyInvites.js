@@ -17,9 +17,14 @@ router.post('/invite-member', async (req, res) => {
   }
 
   try {
-      const inviter = await Player.findOne({ walletAddress: inviterWalletAddress });
-      const invitee = await Player.findOne({ username: inviteeUsername });
-      const family = await Family.findById(familyId);
+    // Zet de familyId en andere ID's om naar ObjectId
+    const familyObjectId = mongoose.Types.ObjectId(familyId);
+    const inviterObjectId = mongoose.Types.ObjectId(inviterWalletAddress);
+    const invitee = await Player.findOne({ username: inviteeUsername });
+
+    // Zoek de inviter op via het ObjectId
+    const inviter = await Player.findById(inviterObjectId);
+    const family = await Family.findById(familyObjectId);
 
       if (!inviter || !invitee || !family) {
           console.error("Invalid inviter, invitee, or family in invite-member:", { inviter, invitee, family });
