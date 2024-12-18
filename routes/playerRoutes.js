@@ -383,7 +383,7 @@ router.get('/players', async (req, res) => {
             username: player.username,
             points: player.points,
             rank: player.rank,
-            family: player.family ? player.family.name : null, // Gebruik familienaam
+            family: player.family ? player.family.name : 'No Family', // Gebruik familienaam
             jail: player.jail,
         }));
 
