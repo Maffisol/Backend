@@ -21,9 +21,22 @@ router.post('/invite-member', async (req, res) => {
       const invitee = await Player.findOne({ username: inviteeUsername });
       const family = await Family.findById(familyId);
 
-      if (!inviter || !invitee || !family) {
-          console.error("Invalid inviter, invitee, or family in invite-member:", { inviter, invitee, family });
-          return res.status(404).json({ error: 'Inviter, Invitee, or Family not found' });
+      // Controleer of de uitnodiger bestaat
+      if (!inviter) {
+          console.error("Inviter not found:", inviterWalletAddress);
+          return res.status(400).json({ error: 'Inviter not found' });
+      }
+
+      // Controleer of de uitgenodigde speler bestaat
+      if (!invitee) {
+          console.error("Invitee not found:", inviteeUsername);
+          return res.status(400).json({ error: 'Invitee not found' });
+      }
+
+      // Controleer of de familie bestaat
+      if (!family) {
+          console.error("Family not found:", familyId);
+          return res.status(400).json({ error: 'Family not found' });
       }
 
       // Check if invitee is already in the family
@@ -62,6 +75,7 @@ router.post('/invite-member', async (req, res) => {
       res.status(500).json({ error: 'Failed to send family invite' });
   }
 });
+
 
 // Fetch all pending family invites for a specific user (invitee)
 // Fetch all pending family invites for a specific user (invitee)
