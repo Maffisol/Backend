@@ -218,8 +218,8 @@ router.post('/bailout/:walletAddress/:familyMemberAddress?', async (req, res) =>
         const bailer = await Player.findOne({ walletAddress });
         if (!bailer) return res.status(404).json({ message: 'Bailer not found' });
 
-        // Als een specifieke familyMemberAddress is opgegeven
-        const targetAddress = familyMemberAddress || walletAddress; // Zelf uitkopen als familyMemberAddress niet is opgegeven
+        // If no familyMemberAddress, bail out any inmate, otherwise bail out a family member
+        const targetAddress = familyMemberAddress || walletAddress; // Default to bailing out yourself if no family member is specified
         const targetPlayer = await Player.findOne({ walletAddress: targetAddress });
 
         if (!targetPlayer) return res.status(404).json({ message: 'Player to bail out not found' });
@@ -233,6 +233,7 @@ router.post('/bailout/:walletAddress/:familyMemberAddress?', async (req, res) =>
             return res.status(400).json({ message: `Insufficient funds to bail out. Cost: ${bailoutCost}` });
         }
 
+        // Process bailout
         bailer.money -= bailoutCost;
         targetPlayer.jail.isInJail = false;
         targetPlayer.jail.jailReleaseTime = null;
@@ -257,6 +258,7 @@ router.post('/bailout/:walletAddress/:familyMemberAddress?', async (req, res) =>
         res.status(500).json({ message: 'Internal Server Error' });
     }
 });
+
 
     return router;
 };
