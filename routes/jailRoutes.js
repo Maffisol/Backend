@@ -183,11 +183,10 @@ router.post('/release-jail/:walletAddress', async (req, res) => {
 // GET - Retrieve all players currently in jail
 router.get('/jail-list', async (req, res) => {
     try {
-        // Filter players who are in jail and have no family (family is null)
+        // Haal zowel spelers zonder familie als met familie op
         const playersInJail = await Player.find({ 
-            "jail.isInJail": true,
-            "family": null // Only search for players with no family
-        }).select('username rank jail family walletAddress');
+            "jail.isInJail": true
+        }).select('username rank jail family walletAddress'); // Je kunt familie en andere velden specificeren die je nodig hebt
 
         // Format players' data with proper jailReleaseTime
         const formattedPlayers = playersInJail.map((player) => ({
@@ -200,7 +199,7 @@ router.get('/jail-list', async (req, res) => {
             },
         }));
 
-        // Send back the formatted data
+        // Stuur de geformatteerde data terug naar de frontend
         res.status(200).json(formattedPlayers);
     } catch (error) {
         console.error('Error fetching players in jail:', error);
