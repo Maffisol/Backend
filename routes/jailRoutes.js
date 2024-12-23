@@ -208,12 +208,11 @@ router.get('/jail-list', async (req, res) => {
 });
 
 
-
 router.post('/bailout/:walletAddress/:familyMemberAddress?', async (req, res) => {
     const { walletAddress, familyMemberAddress } = req.params;
 
     try {
-        // Vind de bailer
+        // Vind de bailer (de speler die de borg betaalt)
         const bailer = await Player.findOne({ walletAddress });
         if (!bailer) {
             console.error('Bailer not found:', walletAddress);
@@ -240,10 +239,10 @@ router.post('/bailout/:walletAddress/:familyMemberAddress?', async (req, res) =>
             rank = 1; // Stel een standaardwaarde in voor rank als deze ongeldig is
         }
 
-        // Bereken de borgkosten
+        // Bereken de borgkosten op de backend
         let bailoutCost;
         try {
-            bailoutCost = calculateBailoutCost(targetPlayer);
+            bailoutCost = calculateBailoutCost(targetPlayer); // Zorg ervoor dat deze functie goed werkt
         } catch (err) {
             console.error('Error calculating bailout cost:', err);
             return res.status(500).json({ message: 'Error calculating bailout cost', error: err.message });
@@ -286,10 +285,11 @@ router.post('/bailout/:walletAddress/:familyMemberAddress?', async (req, res) =>
             console.error('Socket.io instance not initialized');
         }
 
-        // Retourneer een succesbericht
+        // Retourneer een succesbericht met de borgkosten en het resterende geld van de bailer
         res.status(200).json({
             message: `${targetPlayer.username} was successfully bailed out`,
             remainingMoney: bailer.money,
+            bailoutCost: bailoutCost,  // Geef de berekende borgkosten mee
         });
     } catch (error) {
         console.error('Unexpected error during bailout:', error);
