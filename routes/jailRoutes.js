@@ -207,7 +207,6 @@ router.get('/jail-list', async (req, res) => {
     }
 });
 
-
 router.post('/bailout/:walletAddress/:familyMemberAddress?', async (req, res) => {
     const { walletAddress, familyMemberAddress } = req.params;
 
@@ -242,7 +241,8 @@ router.post('/bailout/:walletAddress/:familyMemberAddress?', async (req, res) =>
         // Bereken de borgkosten op de backend
         let bailoutCost;
         try {
-            bailoutCost = calculateBailoutCost(targetPlayer); // Zorg ervoor dat deze functie goed werkt
+            bailoutCost = calculateBailoutCost(targetPlayer);
+            console.log(`Bailout cost for ${targetPlayer.username}: ${bailoutCost}`);
         } catch (err) {
             console.error('Error calculating bailout cost:', err);
             return res.status(500).json({ message: 'Error calculating bailout cost', error: err.message });
@@ -296,6 +296,7 @@ router.post('/bailout/:walletAddress/:familyMemberAddress?', async (req, res) =>
         res.status(500).json({ message: 'Internal Server Error', error: error.message });
     }
 });
+
 
 
     return router;
