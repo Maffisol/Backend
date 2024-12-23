@@ -213,12 +213,14 @@ router.post('/bailout/:walletAddress/:familyMemberAddress?', async (req, res) =>
     const { walletAddress, familyMemberAddress } = req.params;
 
     try {
+        // Vind de bailer
         const bailer = await Player.findOne({ walletAddress });
         if (!bailer) {
             console.error('Bailer not found:', walletAddress);
             return res.status(404).json({ message: 'Bailer not found' });
         }
 
+        // Bepaal het target adres (kan een family member zijn of de speler zelf)
         const targetAddress = familyMemberAddress || walletAddress;
         const targetPlayer = await Player.findOne({ walletAddress: targetAddress });
 
@@ -231,13 +233,14 @@ router.post('/bailout/:walletAddress/:familyMemberAddress?', async (req, res) =>
             return res.status(400).json({ message: 'You cannot bail yourself out' });
         }
 
-        // Check of de rank geldig is
+        // Controleer of de rank geldig is
         let rank = targetPlayer.rank;
         if (typeof rank === 'undefined' || isNaN(Number(rank))) {
             console.error('Invalid rank for player:', targetPlayer.username);
             rank = 1; // Stel een standaardwaarde in voor rank als deze ongeldig is
         }
 
+        // Bereken de borgkosten
         let bailoutCost;
         try {
             bailoutCost = calculateBailoutCost(targetPlayer);
@@ -246,21 +249,24 @@ router.post('/bailout/:walletAddress/:familyMemberAddress?', async (req, res) =>
             return res.status(500).json({ message: 'Error calculating bailout cost', error: err.message });
         }
 
+        // Controleer of de bailer genoeg geld heeft
         if (bailer.money < bailoutCost) {
             console.error(`Insufficient funds: ${bailer.money} < ${bailoutCost}`);
             return res.status(400).json({ message: `Insufficient funds to bail out. Cost: ${bailoutCost}` });
         }
 
+        // Controleer of de target player in de gevangenis zit
         if (!targetPlayer.jail) {
             console.error('Target player jail data is missing:', targetPlayer);
             return res.status(500).json({ message: 'Target player jail data is missing' });
         }
 
-        // Process bailout
+        // Verwerk de bail-out
         bailer.money -= bailoutCost;
         targetPlayer.jail.isInJail = false;
         targetPlayer.jail.jailReleaseTime = null;
 
+        // Sla de wijzigingen op in de database
         try {
             await Promise.all([bailer.save(), targetPlayer.save()]);
         } catch (err) {
@@ -268,6 +274,7 @@ router.post('/bailout/:walletAddress/:familyMemberAddress?', async (req, res) =>
             return res.status(500).json({ message: 'Error saving player data', error: err.message });
         }
 
+        // Verstuur een WebSocket event om de status van de gevangenis bij te werken
         if (io) {
             io.to(targetAddress).emit('jailStatusUpdated', {
                 walletAddress: targetAddress,
@@ -279,6 +286,7 @@ router.post('/bailout/:walletAddress/:familyMemberAddress?', async (req, res) =>
             console.error('Socket.io instance not initialized');
         }
 
+        // Retourneer een succesbericht
         res.status(200).json({
             message: `${targetPlayer.username} was successfully bailed out`,
             remainingMoney: bailer.money,
@@ -288,6 +296,7 @@ router.post('/bailout/:walletAddress/:familyMemberAddress?', async (req, res) =>
         res.status(500).json({ message: 'Internal Server Error', error: error.message });
     }
 });
+
 
     return router;
 };
