@@ -213,53 +213,58 @@ router.post('/bailout/:walletAddress/:familyMemberAddress?', async (req, res) =>
     const { walletAddress, familyMemberAddress } = req.params;
 
     try {
-        // Vind de speler die probeert de ander vrij te kopen (bailer)
         const bailer = await Player.findOne({ walletAddress });
         if (!bailer) {
             console.error('Bailer not found:', walletAddress);
             return res.status(404).json({ message: 'Bailer not found' });
         }
 
-        // De doelspeler (geïnteresseerde familie of zichzelf)
-        const targetAddress = familyMemberAddress || walletAddress;  // Als geen familie, gebruik zelf
+        const targetAddress = familyMemberAddress || walletAddress; // Default to self if no family member
         const targetPlayer = await Player.findOne({ walletAddress: targetAddress });
+
         if (!targetPlayer) {
             console.error('Target player not found:', targetAddress);
             return res.status(404).json({ message: 'Player to bail out not found' });
         }
 
-        // Zorg ervoor dat de speler niet zichzelf probeert vrij te kopen
         if (walletAddress === targetAddress) {
             return res.status(400).json({ message: 'You cannot bail yourself out' });
         }
 
-        // Bereken de kosten voor het vrijlaten van de speler
+        // Debugging: log the player data and bailout calculation
+        console.log('Bailer Data:', bailer);
+        console.log('Target Player Data:', targetPlayer);
+
         let bailoutCost;
         try {
             bailoutCost = calculateBailoutCost(targetPlayer);
+            console.log('Calculated bailout cost:', bailoutCost);  // Debugging bailout cost calculation
         } catch (err) {
             console.error('Error calculating bailout cost:', err);
             return res.status(500).json({ message: 'Error calculating bailout cost' });
         }
 
-        // Controleer of de bailer genoeg geld heeft om de boete te betalen
         if (bailer.money < bailoutCost) {
             console.error(`Insufficient funds: ${bailer.money} < ${bailoutCost}`);
             return res.status(400).json({ message: `Insufficient funds to bail out. Cost: ${bailoutCost}` });
         }
 
-        // Controleer of de doelspeler daadwerkelijk in de gevangenis zit
-        if (!targetPlayer.jail || !targetPlayer.jail.isInJail) {
-            console.error('Target player is not in jail or jail data is missing:', targetPlayer);
-            return res.status(400).json({ message: 'Target player is not in jail' });
+        if (!targetPlayer.jail) {
+            console.error('Target player jail data is missing:', targetPlayer);
+            return res.status(500).json({ message: 'Target player jail data is missing' });
         }
 
-        // Verwerk de betaling en verlos de speler uit de gevangenis
+        // Debugging: log before saving
+        console.log('Before processing bailout:', {
+            bailerMoney: bailer.money,
+            targetPlayerJailStatus: targetPlayer.jail.isInJail,
+        });
+
+        // Process bailout
         bailer.money -= bailoutCost;
         targetPlayer.jail.isInJail = false;
         targetPlayer.jail.jailReleaseTime = null;
 
-        // Sla de updates op in de database
         try {
             await Promise.all([bailer.save(), targetPlayer.save()]);
         } catch (err) {
@@ -267,7 +272,6 @@ router.post('/bailout/:walletAddress/:familyMemberAddress?', async (req, res) =>
             return res.status(500).json({ message: 'Error saving player data' });
         }
 
-        // Emit een socket update als io beschikbaar is
         if (io) {
             io.to(targetAddress).emit('jailStatusUpdated', {
                 walletAddress: targetAddress,
@@ -279,7 +283,6 @@ router.post('/bailout/:walletAddress/:familyMemberAddress?', async (req, res) =>
             console.error('Socket.io instance not initialized');
         }
 
-        // Bevestiging terug naar de frontend
         res.status(200).json({
             message: `${targetPlayer.username} was successfully bailed out`,
             remainingMoney: bailer.money,
@@ -289,6 +292,7 @@ router.post('/bailout/:walletAddress/:familyMemberAddress?', async (req, res) =>
         res.status(500).json({ message: 'Internal Server Error' });
     }
 });
+
 
 
 
