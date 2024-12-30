@@ -207,54 +207,92 @@ router.get('/jail-list', async (req, res) => {
     }
 });
 
-router.post('/bailout/:walletAddress/:familyMemberAddress?', async (req, res) => {
-    const { walletAddress, familyMemberAddress } = req.params;
-
-    // Functie om een speler op te halen
-    const getPlayer = async (address) => {
-        const player = await Player.findOne({ walletAddress: address });
-        if (!player) throw new Error(`Player not found: ${address}`);
-        return player;
+const calculateRankMultiplier = (rank) => {
+    const rankMapping = {
+        "Capo": 3,
+        "Soldato": 2,
+        "Boss": 5,
+        "Underboss": 4,
+        "Don": 6,
     };
+    return rankMapping[rank] || 1; // Default to 1 if rank is not found
+};
 
+const calculateBailoutCost = (player) => {
+    const baseCost = 1000;
+    
+    // Verkrijg de rang van de speler
+    const rank = player.rank;
+    let rankMultiplier = calculateRankMultiplier(rank);
+    
+    if (rankMultiplier === 1) {
+        console.error('Invalid rank for player:', player.username, 'Rank:', rank);
+    }
+    
+    // Bereken de tijdsstraffen op basis van het verblijf in de gevangenis
+    let timePenalty = 0;
+    if (player.jail && player.jail.jailReleaseTime) {
+        const jailReleaseTime = new Date(player.jail.jailReleaseTime).getTime();
+        if (isNaN(jailReleaseTime)) {
+            console.error('Invalid jailReleaseTime for player:', player.username);
+            return 0; // Return 0 als jailReleaseTime ongeldig is
+        }
+    
+        const timeInJail = (jailReleaseTime - Date.now()) / 1000; // Tijd in seconden
+        timePenalty = timeInJail > 0 ? timeInJail * 1 : 0; // Verhoog de penalty bij langere tijd in de gevangenis
+    }
+
+    // Totale kosten
+    const totalCost = baseCost * rankMultiplier + timePenalty;
+
+    // Afronden naar 2 decimalen
+    const roundedCost = Math.round(totalCost * 100) / 100;
+    
+    return roundedCost;
+};
+
+// Stel een route in om de bail-out kosten te berekenen
+app.post('/api/jail/bailout-cost/:walletAddress/:inmateAddress', async (req, res) => {
+    const { walletAddress, inmateAddress } = req.params;
+    
     try {
-        // Haal de bailer en target speler op
-        const bailer = await getPlayer(walletAddress);
-        const targetAddress = familyMemberAddress || walletAddress;
-        const targetPlayer = await getPlayer(targetAddress);
+        // Haal de gegevens van de speler en de gevangene op (bijvoorbeeld via een database)
+        const player = await getPlayerData(walletAddress); // Haal de spelerdata op
+        const inmate = await getInmateData(inmateAddress); // Haal de gevangene data op
 
-        if (walletAddress === targetAddress) {
-            return res.status(400).json({ message: 'You cannot bail yourself out' });
+        if (!player || !inmate) {
+            return res.status(404).json({ message: 'Player or inmate not found' });
         }
 
-        // Bereken de borgkosten
-        const bailoutCost = calculateBailoutCost(targetPlayer);
-        if (bailer.money < bailoutCost) {
-            return res.status(400).json({ message: `Insufficient funds to bail out. Cost: ${bailoutCost}` });
-        }
+        // Bereken de bail-out kosten
+        const bailoutCost = calculateBailoutCost(player);
 
-        // Controleer gevangenisstatus
-        if (!targetPlayer.jail) throw new Error('Target player jail data is missing');
-
-        // Verwerk de bail-out
-        bailer.money -= bailoutCost;
-        targetPlayer.jail.isInJail = false;
-        targetPlayer.jail.jailReleaseTime = null;
-
-        await Promise.all([bailer.save(), targetPlayer.save()]);
-
-        // Emit WebSocket update
-        if (io) {
-            io.to(targetAddress).emit('jailStatusUpdated', { walletAddress: targetAddress, isInJail: false, jailReleaseTime: null });
-        }
-
-        res.status(200).json({ message: `${targetPlayer.username} was successfully bailed out`, remainingMoney: bailer.money, bailoutCost });
+        res.json({
+            success: true,
+            bailoutCost: bailoutCost,
+            message: `Bailout cost for ${inmate.username}: ${bailoutCost}`,
+        });
     } catch (error) {
-        console.error(error.message);
-        res.status(500).json({ message: error.message });
+        console.error('Error calculating bailout cost:', error);
+        res.status(500).json({ message: 'Error calculating bailout cost' });
     }
 });
 
+// Functies om speler en gevangene gegevens op te halen (bijvoorbeeld uit een database)
+const getPlayerData = async (walletAddress) => {
+    // Implementeer hier logica om spelerdata op te halen (bijv. uit een DB)
+    return { walletAddress, rank: 'Capo', jail: { jailReleaseTime: Date.now() + 3600 * 1000 } }; // Voorbeeld
+};
+
+const getInmateData = async (inmateAddress) => {
+    // Implementeer hier logica om gevangene data op te halen (bijv. uit een DB)
+    return { username: 'Inmate123', walletAddress: inmateAddress }; // Voorbeeld
+};
+
+// Start de server
+app.listen(5000, () => {
+    console.log('Server started on port 5000');
+});
 
 
     return router;
