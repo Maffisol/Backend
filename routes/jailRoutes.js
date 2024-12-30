@@ -214,7 +214,6 @@ router.post('/bailout/:walletAddress/:familyMemberAddress?', async (req, res) =>
         // Vind de bailer (de speler die de borg betaalt)
         const bailer = await Player.findOne({ walletAddress });
         if (!bailer) {
-            console.error('Bailer not found:', walletAddress);
             return res.status(404).json({ message: 'Bailer not found' });
         }
 
@@ -223,40 +222,30 @@ router.post('/bailout/:walletAddress/:familyMemberAddress?', async (req, res) =>
         const targetPlayer = await Player.findOne({ walletAddress: targetAddress });
 
         if (!targetPlayer) {
-            console.error('Target player not found:', targetAddress);
-            return res.status(404).json({ message: 'Player to bail out not found' });
-        }
-
-        if (walletAddress === targetAddress) {
-            return res.status(400).json({ message: 'You cannot bail yourself out' });
+            return res.status(404).json({ message: 'Target player not found' });
         }
 
         // Controleer of de rank geldig is
         let rank = targetPlayer.rank;
         if (typeof rank === 'undefined' || isNaN(Number(rank))) {
-            console.error('Invalid rank for player:', targetPlayer.username);
-            rank = 1; // Stel een standaardwaarde in voor rank als deze ongeldig is
+            return res.status(400).json({ message: 'Invalid rank for player' });
         }
 
-        // Bereken de borgkosten op de backend
+        // Bereken de borgkosten
         let bailoutCost;
         try {
             bailoutCost = calculateBailoutCost(targetPlayer);
-            console.log(`Bailout cost for ${targetPlayer.username}: ${bailoutCost}`);
         } catch (err) {
-            console.error('Error calculating bailout cost:', err);
             return res.status(500).json({ message: 'Error calculating bailout cost', error: err.message });
         }
 
         // Controleer of de bailer genoeg geld heeft
         if (bailer.money < bailoutCost) {
-            console.error(`Insufficient funds: ${bailer.money} < ${bailoutCost}`);
             return res.status(400).json({ message: `Insufficient funds to bail out. Cost: ${bailoutCost}` });
         }
 
         // Controleer of de target player in de gevangenis zit
         if (!targetPlayer.jail) {
-            console.error('Target player jail data is missing:', targetPlayer);
             return res.status(500).json({ message: 'Target player jail data is missing' });
         }
 
@@ -265,13 +254,7 @@ router.post('/bailout/:walletAddress/:familyMemberAddress?', async (req, res) =>
         targetPlayer.jail.isInJail = false;
         targetPlayer.jail.jailReleaseTime = null;
 
-        // Sla de wijzigingen op in de database
-        try {
-            await Promise.all([bailer.save(), targetPlayer.save()]);
-        } catch (err) {
-            console.error('Error saving player data:', err);
-            return res.status(500).json({ message: 'Error saving player data', error: err.message });
-        }
+        await Promise.all([bailer.save(), targetPlayer.save()]);
 
         // Verstuur een WebSocket event om de status van de gevangenis bij te werken
         if (io) {
@@ -280,20 +263,17 @@ router.post('/bailout/:walletAddress/:familyMemberAddress?', async (req, res) =>
                 isInJail: false,
                 jailReleaseTime: null,
             });
-            console.log(`Player bailed out: ${targetAddress}`);
-        } else {
-            console.error('Socket.io instance not initialized');
         }
 
-        // Retourneer een succesbericht met de borgkosten en het resterende geld van de bailer
         res.status(200).json({
             message: `${targetPlayer.username} was successfully bailed out`,
             remainingMoney: bailer.money,
-            bailoutCost: bailoutCost,  // Geef de berekende borgkosten mee
+            bailoutCost: bailoutCost,
         });
-    } catch (error) {
-        console.error('Unexpected error during bailout:', error);
-        res.status(500).json({ message: 'Internal Server Error', error: error.message });
+
+    } catch (err) {
+        console.error('Error in bailout route:', err);
+        return res.status(500).json({ message: 'Internal Server Error', error: err.message });
     }
 });
 
