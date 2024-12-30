@@ -207,10 +207,47 @@ router.get('/jail-list', async (req, res) => {
     }
 });
 
+// Een hergeschreven versie van calculateBailoutCost in je backend
+
+const calculateBailoutCost = (player) => {
+    const baseCost = 1000;
+
+    // Check of rank geldig is
+    const rank = player.rank;
+    const rankMapping = {
+        "Capo": 3,
+        "Soldato": 2,
+        "Boss": 5,
+        "Underboss": 4,
+        "Don": 6,
+    };
+
+    const rankMultiplier = rankMapping[rank] || 1; // Als de rank niet herkend wordt, geef dan 1 terug
+
+    let timePenalty = 0;
+
+    if (player.jail && player.jail.jailReleaseTime) {
+        const jailReleaseTime = new Date(player.jail.jailReleaseTime).getTime();
+        if (isNaN(jailReleaseTime)) {
+            console.error('Invalid jailReleaseTime for player:', player.username);
+            return 0; // Return 0 if jailReleaseTime is invalid
+        }
+
+        const timeInJail = (jailReleaseTime - Date.now()) / 1000; // Time in seconds
+        timePenalty = timeInJail > 0 ? timeInJail * 1 : 0;
+    }
+
+    const totalCost = baseCost * rankMultiplier + timePenalty;
+    const roundedCost = Math.round(totalCost * 100) / 100;
+
+    return roundedCost;
+};
+
+// Zorg ervoor dat je deze functie in je route gebruikt
+
 router.post('/bailout/:walletAddress/:familyMemberAddress?', async (req, res) => {
     const { walletAddress, familyMemberAddress } = req.params;
 
-    // Functie om een speler op te halen
     const getPlayer = async (address) => {
         const player = await Player.findOne({ walletAddress: address });
         if (!player) throw new Error(`Player not found: ${address}`);
@@ -227,7 +264,7 @@ router.post('/bailout/:walletAddress/:familyMemberAddress?', async (req, res) =>
             return res.status(400).json({ message: 'You cannot bail yourself out' });
         }
 
-        // Bereken de borgkosten
+        // Bereken de borgkosten met de nieuwe functie
         const bailoutCost = calculateBailoutCost(targetPlayer);
         if (bailer.money < bailoutCost) {
             return res.status(400).json({ message: `Insufficient funds to bail out. Cost: ${bailoutCost}` });
