@@ -21,6 +21,7 @@ const io = socketIo(server, {
     }
 });
 
+
 // CORS Middleware
 app.use(cors({
   origin: process.env.FRONTEND_URL,   // Replace with your actual frontend URL
