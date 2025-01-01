@@ -359,8 +359,7 @@ router.get('/leaderboard', async (req, res) => {
 // --------------------------- Upgrades Routes ---------------------------
 
 /**
- * Upgrade family stats.
- */
+/* Upgrade family stats. */
 router.post('/upgrade', async (req, res) => {
     const { familyId, upgradeType } = req.body;
 
@@ -377,18 +376,6 @@ router.post('/upgrade', async (req, res) => {
         if (!['armory', 'defense', 'income'].includes(upgradeType)) {
             console.error(`Invalid upgrade type: ${upgradeType}`);
             return res.status(400).json({ message: 'Invalid upgrade type' });
-        }
-
-        // Cooldown controle
-        const cooldownDuration = 1200000; // 20 minuten
-        const cooldown = await checkCooldown(familyId, 'upgrade', cooldownDuration);
-
-        if (cooldown.active) {
-            console.error(`Upgrade cooldown active for ${upgradeType} in family: ${familyId}`);
-            return res.status(429).json({
-                message: `Upgrade is on cooldown. Please wait ${Math.ceil(cooldown.remaining / 1000)} seconds.`,
-                remaining: cooldown.remaining,
-            });
         }
 
         // Berekening van kosten op basis van huidig level
@@ -421,9 +408,6 @@ router.post('/upgrade', async (req, res) => {
 
         await family.save();
 
-        // Cooldown instellen
-        await setCooldown(familyId, 'upgrade');
-
         // Real-time updates via Socket.IO
         io.to(`family-${familyId}`).emit('family-update', {
             resources: family.resources,
@@ -442,6 +426,7 @@ router.post('/upgrade', async (req, res) => {
         res.status(500).json({ message: 'Failed to upgrade family' });
     }
 });
+
 
 
 
