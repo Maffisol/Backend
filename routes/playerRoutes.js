@@ -328,6 +328,59 @@ router.post('/sell-item', async (req, res) => {
 });
 
 
+router.post('/sell-all-items', async (req, res) => {
+    const { walletAddress, items } = req.body;
+
+    if (!walletAddress || !Array.isArray(items) || items.length === 0) {
+        return res.status(400).json({ message: 'Wallet address and items are required.' });
+    }
+
+    try {
+        const player = await Player.findOne({ walletAddress });
+        if (!player) return res.status(404).json({ message: 'Player not found' });
+
+        let totalValue = 0;
+        let totalXp = 0;
+
+        // Loop through each item in the request and process it
+        for (const itemData of items) {
+            const { itemName, quantity } = itemData;
+            
+            // Find the item in the player's inventory
+            const itemIndex = player.inventory.findIndex(item => item.itemName === itemName);
+            if (itemIndex === -1) continue; // Skip if the item doesn't exist in inventory
+
+            const item = player.inventory[itemIndex];
+
+            // Ensure that we don't try to sell more than the available quantity
+            const sellQuantity = Math.min(item.quantity, quantity);
+
+            // Calculate the value and XP for the item
+            totalValue += item.value * sellQuantity;
+            totalXp += item.xp * sellQuantity;
+
+            // Update the inventory: subtract the sold quantity
+            player.inventory[itemIndex].quantity -= sellQuantity;
+
+            // If the quantity reaches zero, remove the item from inventory
+            if (player.inventory[itemIndex].quantity <= 0) {
+                player.inventory.splice(itemIndex, 1);
+            }
+        }
+
+        // Update player's money and points
+        player.money += totalValue;
+        player.points += totalXp;
+
+        await player.save();
+
+        res.status(200).json({ inventory: player.inventory, money: player.money, points: player.points });
+    } catch (error) {
+        console.error('Error selling all items:', error);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+});
+
 // POST - Log Minigame Score and Apply Rewards
 router.post('/minigame/log', async (req, res) => {
     const { walletAddress, gameType, score } = req.body;
