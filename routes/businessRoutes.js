@@ -236,7 +236,7 @@ router.put('/sellHalfKilo/:walletAddress', async (req, res) => {
     }
 });
 
-// Route om lastOuncePurchase bij te werken
+/// Route om lastOuncePurchase bij te werken
 router.put('/update-lastouncepurchase/:walletAddress', async (req, res) => {
     const { walletAddress } = req.params;
 
@@ -248,13 +248,14 @@ router.put('/update-lastouncepurchase/:walletAddress', async (req, res) => {
             return res.status(404).json({ message: 'Player not found' });
         }
 
-        // Update de lastOuncePurchase naar de huidige datum en tijd
-        player.lastOuncePurchase = new Date().toISOString();
+        // Controleer of lastOuncePurchase al bestaat
+        if (!player.lastOuncePurchase) {
+            // Als het nog niet bestaat, update het naar de huidige tijd
+            player.lastOuncePurchase = new Date().toISOString();
+            await player.save();
+        }
 
-        // Sla de wijzigingen op in de database
-        await player.save();
-
-        // Stuur het bijgewerkte profiel terug als antwoord
+        // Stuur het profiel (met of zonder lastOuncePurchase update) terug als antwoord
         res.json(player);
     } catch (error) {
         console.error("Error updating lastouncepurchase:", error);
