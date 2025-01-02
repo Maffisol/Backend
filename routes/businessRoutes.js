@@ -265,6 +265,7 @@ router.put('/update-lastouncepurchase/:walletAddress', async (req, res) => {
 
 // Controleer of de speler ooit een ounce heeft gekocht door te kijken naar lastOuncePurchase
 router.get('/check-ounces/:walletAddress', async (req, res) => {
+    console.log('Received request for walletAddress:', req.params.walletAddress);  // Voeg dit toe om te controleren of de route wordt bereikt.
     const { walletAddress } = req.params;
 
     try {
