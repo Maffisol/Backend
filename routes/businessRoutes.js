@@ -207,5 +207,35 @@ router.put('/sellOunce/:walletAddress', async (req, res) => {
     }
 });
 
+
+// PUT to sell half kilo
+router.put('/sellHalfKilo/:walletAddress', async (req, res) => {
+    const { walletAddress } = req.params;
+
+    try {
+        const player = await Player.findOne({ walletAddress });
+
+        if (!player) {
+            return res.status(404).json({ message: 'Speler niet gevonden' });
+        }
+
+        // Check if the player has half kilos to sell
+        if (player.halfKilos <= 0) {
+            return res.status(400).json({ message: 'Geen halve kilo\'s om te verkopen.' });
+        }
+
+        // Update player's money and inventory
+        player.halfKilos -= 1; // Verkoop 1 halve kilo
+        player.money += HALF_KILO_PRICE; // Verdien $2200 van de verkoop
+        await player.save();
+
+        return res.json(player);
+    } catch (error) {
+        console.error('Fout bij het verkopen van een halve kilo:', error);
+        return res.status(500).json({ message: 'Interne Server Fout' });
+    }
+});
+
+
 return router;
 };
