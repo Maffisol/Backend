@@ -236,6 +236,31 @@ router.put('/sellHalfKilo/:walletAddress', async (req, res) => {
     }
 });
 
+// Route om lastOuncePurchase bij te werken
+router.put('/update-lastouncepurchase/:walletAddress', async (req, res) => {
+    const { walletAddress } = req.params;
+
+    try {
+        // Zoek de speler op basis van walletAddress
+        const player = await Player.findOne({ walletAddress });
+
+        if (!player) {
+            return res.status(404).json({ message: 'Player not found' });
+        }
+
+        // Update de lastOuncePurchase naar de huidige datum en tijd
+        player.lastOuncePurchase = new Date().toISOString();
+
+        // Sla de wijzigingen op in de database
+        await player.save();
+
+        // Stuur het bijgewerkte profiel terug als antwoord
+        res.json(player);
+    } catch (error) {
+        console.error("Error updating lastouncepurchase:", error);
+        res.status(500).send("Failed to update lastouncepurchase");
+    }
+});
 
 return router;
 };
