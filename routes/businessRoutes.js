@@ -29,7 +29,6 @@ router.put('/buyOunce/:walletAddress', async (req, res) => {
 
         // Update player's money and inventory
         player.money -= OUNCE_PRICE; // Verlies $600
-        player.ounces += 1; // Krijg 1 ons
         player.bags += OUNCE_TO_BAGS; // Krijg 125 zakjes voor de ounce
         player.lastOuncePurchase = new Date(); // Sla de tijd van de aankoop op
         await player.save();
@@ -40,6 +39,7 @@ router.put('/buyOunce/:walletAddress', async (req, res) => {
         return res.status(500).json({ message: 'Interne Server Fout' });
     }
 });
+
 
 // PUT to buy half kilo
 router.put('/buyHalfKilo/:walletAddress', async (req, res) => {
@@ -59,7 +59,7 @@ router.put('/buyHalfKilo/:walletAddress', async (req, res) => {
 
         // Update player's money and inventory
         player.money -= HALF_KILO_PRICE; // Verlies $2200
-        player.halfKilos += 1; // Krijg 1 halve kilo
+        player.ounces += 6; // Krijg 6 ons in plaats van 1 halve kilo
         await player.save();
 
         return res.json(player);
@@ -87,8 +87,7 @@ router.put('/buyKilo/:walletAddress', async (req, res) => {
 
         // Update player's money and inventory
         player.money -= KILO_PRICE; // Verlies $4000
-        player.kilos += 1; // Krijg 1 kilo
-        player.ounces += 10; // Krijg 10 ons
+        player.halfKilos += 2; // Krijg 2 halve kilo's in plaats van 1 kilo
         await player.save();
 
         return res.json(player);
