@@ -269,7 +269,7 @@ router.get('/check-ounces/:walletAddress', async (req, res) => {
     const { walletAddress } = req.params;
 
     try {
-        const player = await Player.findOne({ where: { walletAddress } });
+        const player = await Player.findOne({ where: { walletAddress: walletAddress } });
 
         if (!player) {
             return res.status(404).json({ message: 'Player not found' });
