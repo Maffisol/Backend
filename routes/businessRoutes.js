@@ -263,5 +263,27 @@ router.put('/update-lastouncepurchase/:walletAddress', async (req, res) => {
     }
 });
 
+
+// Nieuwe route om te controleren of de speler ooit een ounce heeft gekocht
+router.get('/check-ounces/:walletAddress', async (req, res) => {
+    const { walletAddress } = req.params;
+
+    try {
+        const player = await Player.findOne({ where: { walletAddress } });
+
+        if (!player) {
+            return res.status(404).json({ message: 'Player not found' });
+        }
+
+        // Controleer of de speler ooit een ounce heeft gekocht
+        const hasBoughtOunce = player.ounces > 0 || player.lastouncepurchase;
+
+        res.status(200).json({ hasBoughtOunce });
+    } catch (err) {
+        res.status(500).json({ message: 'Error checking ounce purchase', error: err.message });
+    }
+});
+
+
 return router;
 };
