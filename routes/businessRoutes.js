@@ -265,13 +265,14 @@ router.put('/update-lastouncepurchase/:walletAddress', async (req, res) => {
 
 // Controleer of de speler ooit een ounce heeft gekocht door te kijken naar lastOuncePurchase
 router.get('/check-ounces/:walletAddress', async (req, res) => {
-    console.log('Received request for walletAddress:', req.params.walletAddress);  // Voeg dit toe om te controleren of de route wordt bereikt.
     const { walletAddress } = req.params;
 
     try {
-        const player = await Player.findOne({ where: { walletAddress: walletAddress } });
+        // Zoek de speler op basis van walletAddress
+        const player = await Player.findOne({ walletAddress });
 
         if (!player) {
+            console.log("Player not found with walletAddress:", walletAddress);
             return res.status(404).json({ message: 'Player not found' });
         }
 
@@ -280,6 +281,7 @@ router.get('/check-ounces/:walletAddress', async (req, res) => {
 
         res.status(200).json({ hasBoughtOunce });
     } catch (err) {
+        console.error("Error checking ounce purchase:", err);
         res.status(500).json({ message: 'Error checking ounce purchase', error: err.message });
     }
 });
