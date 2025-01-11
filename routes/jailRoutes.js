@@ -15,7 +15,10 @@ const rankDurations = {
     Underboss: 40,
     Don: 50,
     Godfather: 60,
+    default: 5, // Voeg een fallback toe
 };
+
+
 
 // POST - Send Player to Jail
 router.post('/jail/:walletAddress', async (req, res) => {
@@ -36,7 +39,7 @@ router.post('/jail/:walletAddress', async (req, res) => {
         let finalJailTime = jailTime; // Prioriteit aan opgegeven jailTime
         if (!jailTime) {
             const rank = player.rank || 'Rookie';
-            finalJailTime = rankDurations[rank] || 5; // Standaard naar 5 minuten als rang onbekend is
+            const finalJailTime = rankDurations[rank] || rankDurations.default;
         }
 
         // Bereken vrijlatingstijd
