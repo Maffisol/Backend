@@ -218,14 +218,19 @@ const calculateBailoutCost = (player) => {
     // Check of rank geldig is
     const rank = player.rank;
     const rankMapping = {
+        "Rookie": 0.5,      // Voeg Rookie toe
+        "Associate": 1,
+        "Soldier": 2,       // Controleer spelling van Soldier
         "Capo": 3,
-        "Soldato": 2,
-        "Boss": 5,
         "Underboss": 4,
-        "Don": 6,
+        "Don": 5,
+        "Godfather": 6
     };
 
-    const rankMultiplier = rankMapping[rank] || 1; // Als de rank niet herkend wordt, geef dan 1 terug
+    const rankMultiplier = rankMapping[player.rank] || 1; // Gebruik standaardwaarde 1
+    if (!rankMapping[player.rank]) {
+        console.error(`Invalid rank for player: ${player.walletAddress}. Rank: ${player.rank}`);
+    }
 
     let timePenalty = 0;
 
