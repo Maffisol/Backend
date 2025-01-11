@@ -15,10 +15,7 @@ const rankDurations = {
     Underboss: 40,
     Don: 50,
     Godfather: 60,
-    default: 5, // Voeg een fallback toe
 };
-
-
 
 // POST - Send Player to Jail
 router.post('/jail/:walletAddress', async (req, res) => {
@@ -39,7 +36,7 @@ router.post('/jail/:walletAddress', async (req, res) => {
         let finalJailTime = jailTime; // Prioriteit aan opgegeven jailTime
         if (!jailTime) {
             const rank = player.rank || 'Rookie';
-            const finalJailTime = rankDurations[rank] || rankDurations.default;
+            finalJailTime = rankDurations[rank] || 5; // Standaard naar 5 minuten als rang onbekend is
         }
 
         // Bereken vrijlatingstijd
@@ -215,18 +212,17 @@ router.get('/jail-list', async (req, res) => {
 const calculateBailoutCost = (player) => {
     const baseCost = 1000;
 
-    // Check of rank geldig is
-    const rank = player.rank;
-const rankMapping = {
-    "Rookie": 0.5,      // Voeg Rookie toe
-    "Associate": 1,
-    "Soldier": 2,       // Controleer spelling van Soldier
-    "Capo": 3,
-    "Underboss": 4,
-    "Don": 5,
-    "Godfather": 6
-};
-
+   // Check of rank geldig is
+   const rank = player.rank;
+   const rankMapping = {
+       "Rookie": 0.5,      // Voeg Rookie toe
+       "Associate": 1,
+       "Soldier": 2,       // Controleer spelling van Soldier
+       "Capo": 3,
+       "Underboss": 4,
+       "Don": 5,
+       "Godfather": 6
+   };
     const rankMultiplier = rankMapping[rank] || 1; // Als de rank niet herkend wordt, geef dan 1 terug
 
     let timePenalty = 0;
