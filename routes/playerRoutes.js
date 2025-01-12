@@ -527,6 +527,24 @@ router.post('/update-guide-status', async (req, res) => {
         res.status(500).json({ message: 'Error updating guide status', error });
     }
 });
+
+
+router.get('/check-guide-status', async (req, res) => {
+    const { userId } = req.query;
+
+    try {
+        // Zoek de speler op basis van 'userId' en geef de 'hasSeenGuide' status terug
+        const user = await Player.findById(userId);
+
+        if (!user) {
+            return res.status(404).json({ message: 'User not found' });
+        }
+
+        res.status(200).json({ hasSeenGuide: user.hasSeenGuide });
+    } catch (error) {
+        res.status(500).json({ message: 'Error fetching guide status', error });
+    }
+});
     
 
 module.exports = router;
