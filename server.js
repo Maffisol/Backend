@@ -285,7 +285,7 @@ app.use('/api/jail', jailRoutes(io));
 app.use('/api/kill', killRoutes(io)); // New kill route
 app.use('/api/familyDashboard', dashboardRoutes(io));
 app.use('/api/shop', shopRoutes);
-app.use('/api/guide', interactiveGuideRoute); // Prefix de route met '/api/guide' voor overzichtelijkheid
+app.use('/api/guide', interactiveGuideRoute(io)); // Prefix de route met '/api/guide' voor overzichtelijkheid
 
 
 // 404 Error Handling Middleware
