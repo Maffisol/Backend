@@ -511,26 +511,34 @@ router.get('/by-username/:username', async (req, res) => {
     }
 });
 
-//guide//
 router.post('/update-guide-status', async (req, res) => {
-    const { walletAddress, hasSeenGuide } = req.body;  // Verander 'userId' naar 'walletAddress'
-    
+    const { walletAddress, hasSeenGuide } = req.body;  // Zorg dat walletAddress binnenkomt
+    console.log('Incoming request:', { walletAddress, hasSeenGuide }); // Debug de request body
+  
     try {
-        // Zoek de speler op basis van 'walletAddress' in plaats van 'userId'
-        const user = await Player.findOneAndUpdate(
-            { walletAddress },  // Zoeken op walletAddress
-            { hasSeenGuide },  // Werk de 'hasSeenGuide' status bij
-            { new: true }  // Stuur het nieuwe document terug
-        );
-
-        // Verstuur de bijgewerkte spelerstatus via Socket.IO naar de frontend (optioneel)
-        req.app.get('io').emit('guideStatusUpdated', { walletAddress, hasSeenGuide });
-
-        res.status(200).json(user);  // Stuur de bijgewerkte speler terug als reactie
+      // Zoek de speler
+      const user = await Player.findOneAndUpdate(
+        { walletAddress },  // Zoeken op walletAddress
+        { hasSeenGuide },  // Werk de 'hasSeenGuide' status bij
+        { new: true }  // Stuur het nieuwe document terug
+      );
+  
+      if (!user) {
+        console.log('No user found with walletAddress:', walletAddress);
+        return res.status(404).json({ message: 'User not found' });
+      }
+  
+      // Verstuur de bijgewerkte spelerstatus via Socket.IO naar de frontend (optioneel)
+      req.app.get('io').emit('guideStatusUpdated', { walletAddress, hasSeenGuide });
+  
+      console.log('Updated user:', user); // Debug de bijgewerkte gebruiker
+      res.status(200).json(user);  // Stuur de bijgewerkte speler terug
     } catch (error) {
-        res.status(500).json({ message: 'Error updating guide status', error });
+      console.error('Error updating guide status:', error);
+      res.status(500).json({ message: 'Error updating guide status', error });
     }
-});
+  });
+  
 
 
 
