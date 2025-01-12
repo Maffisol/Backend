@@ -534,8 +534,8 @@ router.post('/update-guide-status', async (req, res) => {
 
 
 
-router.get('/check-guide-status', async (req, res) => {
-    const { walletAddress } = req.query;
+router.get('/check-guide-status/:walletAddress', async (req, res) => {
+    const { walletAddress } = req.params;  // Gebruik req.params om de walletAddress uit de URL te halen
 
     // Log de ontvangen walletAddress
     console.log('Received walletAddress:', walletAddress);
@@ -566,6 +566,7 @@ router.get('/check-guide-status', async (req, res) => {
         res.status(500).json({ message: 'Error fetching guide status', error });
     }
 });
+
 
 
 
