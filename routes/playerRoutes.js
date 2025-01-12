@@ -513,24 +513,29 @@ router.get('/by-username/:username', async (req, res) => {
 
 //guide//
 router.post('/update-guide-status', async (req, res) => {
-    const { userId, hasSeenGuide } = req.body;
+    const { walletAddress, hasSeenGuide } = req.body;  // Verander 'userId' naar 'walletAddress'
     
     try {
-        // Zoek de speler op basis van 'userId' en werk de 'hasSeenGuide' status bij
-        const user = await Player.findByIdAndUpdate(userId, { hasSeenGuide }, { new: true });
+        // Zoek de speler op basis van 'walletAddress' in plaats van 'userId'
+        const user = await Player.findOneAndUpdate(
+            { walletAddress },  // Zoeken op walletAddress
+            { hasSeenGuide },  // Werk de 'hasSeenGuide' status bij
+            { new: true }  // Stuur het nieuwe document terug
+        );
 
-        // Verstuur de bijgewerkte spelerstatus via Socket.IO naar de frontend (als je dit wenst)
-        req.app.get('io').emit('guideStatusUpdated', { userId, hasSeenGuide });
+        // Verstuur de bijgewerkte spelerstatus via Socket.IO naar de frontend (optioneel)
+        req.app.get('io').emit('guideStatusUpdated', { walletAddress, hasSeenGuide });
 
-        res.status(200).json(user); // Stuur de bijgewerkte speler terug als reactie
+        res.status(200).json(user);  // Stuur de bijgewerkte speler terug als reactie
     } catch (error) {
         res.status(500).json({ message: 'Error updating guide status', error });
     }
 });
 
 
+
 router.get('/check-guide-status', async (req, res) => {
-    const { walletAddress } = req.query; // Haal walletAddress uit de query string
+    const { walletAddress } = req.query;  // Haal walletAddress uit de query string
 
     try {
         // Zoek de speler op basis van 'walletAddress'
@@ -542,9 +547,10 @@ router.get('/check-guide-status', async (req, res) => {
 
         res.status(200).json({ hasSeenGuide: user.hasSeenGuide });
     } catch (error) {
-        console.error('Error fetching guide status:', error); // Log de fout voor debugging
+        console.error('Error fetching guide status:', error);  // Log de fout voor debugging
         res.status(500).json({ message: 'Error fetching guide status', error });
     }
 });
+
 
 module.exports = router;
