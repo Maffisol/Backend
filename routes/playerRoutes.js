@@ -511,7 +511,7 @@ router.get('/by-username/:username', async (req, res) => {
     }
 });
 
-router.post('/update-guide-status', async (req, res) => {
+router.post('/update-guide-status/:walletAddress', async (req, res) => {
     const { walletAddress, hasSeenGuide } = req.body;  // Zorg dat walletAddress binnenkomt
     console.log('Incoming request:', { walletAddress, hasSeenGuide }); // Debug de request body
   
