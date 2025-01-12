@@ -37,7 +37,6 @@ const playerSchema = new mongoose.Schema({
     isPro: { type: Boolean, default: false },
     family: { type: mongoose.Schema.Types.ObjectId, ref: 'Family', default: null },
     createdAt: { type: Date, default: Date.now },
-    hasSeenGuide: { type: Boolean, default: false },  // Voeg dit veld toe
     inbox: { type: [inboxMessageSchema], default: [] },
     base: {
         stage: { type: Number, default: 1 },
