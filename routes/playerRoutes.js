@@ -277,7 +277,7 @@ router.get('/inventory/:walletAddress', async (req, res) => {
     }
 });
 
-// Helper function to update player and send response
+/* Helper function to update player and send response
 const updatePlayer = async (walletAddress, updateData, res, successMessage) => {
     try {
         const player = await Player.findOneAndUpdate({ walletAddress }, updateData, { new: true });
@@ -287,7 +287,7 @@ const updatePlayer = async (walletAddress, updateData, res, successMessage) => {
         console.error('Error updating player:', error);
         res.status(500).json({ message: 'Internal Server Error' });
     }
-};
+}; */
 
 // In your Express router file (e.g., routes/player.js)
 router.post('/sell-item', async (req, res) => {
@@ -317,6 +317,9 @@ router.post('/sell-item', async (req, res) => {
 
         // Remove the item from the inventory
         player.inventory.splice(itemIndex, 1);
+
+        // Call the rank update function after modifying points
+        await updatePlayerRank(player);
 
         await player.save();
 
@@ -371,6 +374,9 @@ router.post('/sell-all-items', async (req, res) => {
         // Update player's money and points
         player.money += totalValue;
         player.points += totalXp;
+
+        // Call the rank update function after modifying points
+        await updatePlayerRank(player);
 
         await player.save();
 
