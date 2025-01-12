@@ -541,19 +541,22 @@ router.get('/check-guide-status', async (req, res) => {
     console.log('Received walletAddress:', walletAddress);
 
     try {
+        // Controleer of walletAddress is aanwezig
+        if (!walletAddress) {
+            return res.status(400).json({ message: 'walletAddress is required' });
+        }
+
         // Zoek de speler op basis van walletAddress
         const user = await Player.findOne({ walletAddress });
 
-        // Log de speler als deze gevonden wordt
-        if (user) {
-            console.log('User found:', user);
-        } else {
-            console.log('User not found');
-        }
-
+        // Als de speler niet gevonden wordt, log dat dan
         if (!user) {
+            console.log('User not found');
             return res.status(404).json({ message: 'User not found' });
         }
+
+        // Log de gevonden speler
+        console.log('User found:', user);
 
         // Stuur de hasSeenGuide status terug
         res.status(200).json({ hasSeenGuide: user.hasSeenGuide });
@@ -563,6 +566,7 @@ router.get('/check-guide-status', async (req, res) => {
         res.status(500).json({ message: 'Error fetching guide status', error });
     }
 });
+
 
 
 
