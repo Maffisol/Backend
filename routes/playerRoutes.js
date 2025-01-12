@@ -535,22 +535,29 @@ router.post('/update-guide-status', async (req, res) => {
 
 
 router.get('/check-guide-status', async (req, res) => {
-    const { walletAddress } = req.query;  // Haal walletAddress uit de query string
+    const { walletAddress } = req.query;  // Haal walletAddress uit query string
 
     try {
-        // Zoek de speler op basis van 'walletAddress'
+        // Log het ontvangen walletAddress om te controleren of het goed wordt doorgestuurd
+        console.log('Received walletAddress:', walletAddress);
+
+        // Zoek de speler op basis van walletAddress
         const user = await Player.findOne({ walletAddress });
 
         if (!user) {
+            console.log('User not found');
             return res.status(404).json({ message: 'User not found' });
         }
 
+        // Stuur de hasSeenGuide status terug
         res.status(200).json({ hasSeenGuide: user.hasSeenGuide });
     } catch (error) {
-        console.error('Error fetching guide status:', error);  // Log de fout voor debugging
+        // Log de fout om te zien wat er mis gaat
+        console.error('Error fetching guide status:', error);
         res.status(500).json({ message: 'Error fetching guide status', error });
     }
 });
+
 
 
 module.exports = router;
