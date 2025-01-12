@@ -73,6 +73,8 @@ const chatRoutes = require('./routes/chats');
 const jailRoutes = require('./routes/jailRoutes');
 const dashboardRoutes = require('./routes/familyDashboard'); // Pas het pad aan indien nodig
 const shopRoutes = require('./routes/shopRoutes');
+const interactiveGuideRoute = require('./routes/interactiveGuide');
+
 
 // User socket map for tracking connected users
 const userSockets = {};
@@ -283,6 +285,8 @@ app.use('/api/jail', jailRoutes(io));
 app.use('/api/kill', killRoutes(io)); // New kill route
 app.use('/api/familyDashboard', dashboardRoutes(io));
 app.use('/api/shop', shopRoutes);
+app.use('/api/guide', interactiveGuideRoute); // Prefix de route met '/api/guide' voor overzichtelijkheid
+
 
 // 404 Error Handling Middleware
 app.use((req, res, next) => {
