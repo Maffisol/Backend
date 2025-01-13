@@ -512,8 +512,10 @@ router.get('/by-username/:username', async (req, res) => {
 });
 
 router.post('/update-guide-status/:walletAddress', async (req, res) => {
-    const { walletAddress, hasSeenGuide } = req.body;  // Zorg dat walletAddress binnenkomt
-    console.log('Incoming request:', { walletAddress, hasSeenGuide }); // Debug de request body
+    const { hasSeenGuide } = req.body; // Alleen hasSeenGuide komt uit de body
+    const { walletAddress } = req.params; // WalletAddress uit de URL
+  
+    console.log('Incoming request:', { walletAddress, hasSeenGuide }); // Debug
   
     try {
       // Zoek de speler
@@ -528,16 +530,17 @@ router.post('/update-guide-status/:walletAddress', async (req, res) => {
         return res.status(404).json({ message: 'User not found' });
       }
   
-      // Verstuur de bijgewerkte spelerstatus via Socket.IO naar de frontend (optioneel)
+      // Verstuur status via Socket.IO (optioneel)
       req.app.get('io').emit('guideStatusUpdated', { walletAddress, hasSeenGuide });
   
       console.log('Updated user:', user); // Debug de bijgewerkte gebruiker
-      res.status(200).json(user);  // Stuur de bijgewerkte speler terug
+      res.status(200).json(user); // Stuur de bijgewerkte speler terug
     } catch (error) {
       console.error('Error updating guide status:', error);
       res.status(500).json({ message: 'Error updating guide status', error });
     }
   });
+  
   
 
 
