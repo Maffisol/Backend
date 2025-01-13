@@ -212,14 +212,20 @@ router.post('/bailout/:walletAddress/:familyMemberAddress', async (req, res) => 
 // Protected Routes with jailCheck middleware
 router.post('/smuggle/:walletAddress', jailCheck, async (req, res) => {
     res.json({ message: 'Smuggling attempt processed.' });
+    await updatePlayerRank(player);
+
 });
 
 router.post('/steal-car/:walletAddress', jailCheck, async (req, res) => {
     res.json({ message: 'Steal car attempt processed.' });
+    await updatePlayerRank(player);
+
 });
 
 router.post('/commit-crime/:walletAddress', jailCheck, async (req, res) => {
     res.json({ message: 'Crime attempt processed.' });
+    await updatePlayerRank(player);
+
 });
 
 // Route to add items to inventory after a successful crime or car theft
