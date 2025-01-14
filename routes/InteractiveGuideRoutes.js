@@ -20,7 +20,25 @@ router.post('/update-guide-status', async (req, res) => {
     }
 });
     
+// Haal de gidsstatus op voor een specifieke speler via hun walletAddress
+router.get('/get-guide-status/:walletAddress', async (req, res) => {
+    const { walletAddress } = req.params; // Haal het walletAddress op uit de route parameters
     
+    try {
+        // Zoek de speler op basis van het walletadres
+        const player = await Player.findOne({ walletAddress });
+
+        // Als de speler niet gevonden wordt, geef dan een foutmelding
+        if (!player) {
+            return res.status(404).json({ message: 'Player not found' });
+        }
+
+        // Verstuur de 'hasSeenGuide' status terug naar de frontend
+        res.status(200).json({ hasSeenGuide: player.hasSeenGuide });
+    } catch (error) {
+        res.status(500).json({ message: 'Error fetching guide status', error });
+    }
+});    
 
 return router; // Zorg ervoor dat je de router retourneert
 };
