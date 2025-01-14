@@ -82,4 +82,50 @@ router.get('/balance/:walletAddress', async (req, res) => {
     }
 });
 
+
+router.post("/purchase", async (req, res) => {
+    const { publicKey, itemName } = req.body;
+  
+    if (!publicKey || !itemName) {
+      return res.status(400).json({ error: "Public key and item name are required." });
+    }
+  
+    try {
+      // Zoek de speler op basis van publicKey
+      const player = await Player.findOne({ publicKey });
+  
+      if (!player) {
+        return res.status(404).json({ error: "Player not found." });
+      }
+  
+      // Update de speler op basis van de aankoop
+      switch (itemName) {
+        case "Get Pro":
+          player.isPro = true; // Zet de speler naar Pro
+          break;
+  
+        case "Buy Points":
+          player.points += 1000;  // Voeg 50 punten toe voor 'Buy Points'
+          break;
+  
+        case "Buy Money":
+          player.money += 10000;  // Voeg 5 eenheden geld toe voor 'Buy Money'
+          break;
+  
+        default:
+          return res.status(400).json({ error: "Invalid item name." });
+      }
+  
+      // Sla de bijgewerkte speler op in de database
+      await player.save();
+  
+      return res.status(200).json({ success: `${itemName} successfully purchased and profile updated!` });
+  
+    } catch (error) {
+      console.error(error);
+      return res.status(500).json({ error: "Internal server error" });
+    }
+  });
+  
+
 module.exports = router;
