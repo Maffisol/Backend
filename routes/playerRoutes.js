@@ -25,6 +25,9 @@ const updatePlayerRank = async (player) => {
     }
 };
 
+// Voorbeeld backend code (bijv. in de login route)
+const jwt = require('jsonwebtoken');
+
 // POST - Login: Check if player with walletAddress exists
 router.post('/login', async (req, res) => {
     const { walletAddress } = req.body;
@@ -39,8 +42,11 @@ router.post('/login', async (req, res) => {
             return res.status(404).json({ message: 'Player not found' });
         }
 
-        // Return the player data or prompt for username if missing
-        res.status(200).json(player);
+        // Genereren van een JWT-token
+        const token = jwt.sign({ walletAddress: player.walletAddress, username: player.username }, 'secret-key', { expiresIn: '1h' });
+
+        // Terugsturen van de spelerdata en token
+        res.status(200).json({ player, token });
     } catch (error) {
         console.error('Error checking user:', error);
         res.status(500).json({ message: 'Internal Server Error' });
