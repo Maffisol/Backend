@@ -15,7 +15,7 @@ if (!PRIVATE_KEY) {
 
 const connection = new Connection(QUICKNODE_URL, 'confirmed');
 const payer = Keypair.fromSecretKey(bs58.decode(PRIVATE_KEY));
-const TO_ADDRESS = "ELRAtseMVu4w6Qw7gBJw5v8c3w9mpvYm42nmMgtbCk";
+const TO_ADDRESS = "As1kMLxEKBK38jQTfVN1iMuKbAch78WcrD5FLcCjDFbt";
 
 router.post("/transaction", async (req, res) => {
     const { to, item, transactionSignature } = req.body;
