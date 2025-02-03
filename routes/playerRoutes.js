@@ -600,9 +600,15 @@ router.get('/bankvault/:walletAddress', async (req, res) => {
         const interest = player.calculateInterest();
 
         // Zorg ervoor dat depositDate altijd een geldig Date object is
-        const depositDateString = player.depositDate instanceof Date && !isNaN(player.depositDate.getTime()) 
-            ? player.depositDate.toLocaleDateString() 
-            : 'No deposit yet';
+        let depositDateString = 'No deposit yet';  // Default value
+
+        if (player.depositDate) {
+            // Controleer of depositDate een geldig Date object is
+            const depositDate = new Date(player.depositDate);
+            if (!isNaN(depositDate.getTime())) {
+                depositDateString = depositDate.toLocaleDateString();
+            }
+        }
 
         res.json({
             balance: player.money, // Gebruik money in plaats van balance
