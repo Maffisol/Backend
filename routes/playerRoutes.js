@@ -587,32 +587,32 @@ router.get('/check-guide-status/:walletAddress', async (req, res) => {
 // Route om het saldo van de speler op te halen
 router.get('/bankvault/:walletAddress', async (req, res) => {
     const { walletAddress } = req.params;
-  
+
     try {
-      // Haal de speler op uit de database met de juiste walletAddress
-      const player = await Player.findOne({ walletAddress });
-  
-      if (!player) {
-        return res.status(404).json({ error: 'Player not found' });
-      }
-  
-      // Bereken de rente
-      const interest = player.calculateInterest();
-  
-      // Controleer of depositDate een geldige datum is
-      const depositDateString = player.depositDate instanceof Date && !isNaN(player.depositDate) 
-        ? player.depositDate.toLocaleDateString() 
-        : 'No deposit yet';
-  
-      res.json({
-        balance: player.money, // Gebruik money in plaats van balance
-        interest: interest,
-        depositDate: depositDateString,  // De veilige datumstring
-      });
+        // Haal de speler op uit de database met de juiste walletAddress
+        const player = await Player.findOne({ walletAddress });
+
+        if (!player) {
+            return res.status(404).json({ error: 'Player not found' });
+        }
+
+        // Bereken de rente
+        const interest = player.calculateInterest();
+
+        // Zorg ervoor dat depositDate altijd een geldig Date object is
+        const depositDateString = player.depositDate instanceof Date && !isNaN(player.depositDate.getTime()) 
+            ? player.depositDate.toLocaleDateString() 
+            : 'No deposit yet';
+
+        res.json({
+            balance: player.money, // Gebruik money in plaats van balance
+            interest: interest,
+            depositDate: depositDateString,  // De veilige datumstring
+        });
     } catch (error) {
-      res.status(500).json({ error: error.message });
+        res.status(500).json({ error: error.message });
     }
-  });
+});
 
 // Route om het saldo bij te werken (deposit of withdraw)
 router.put('/bankvault/:walletAddress', async (req, res) => {
