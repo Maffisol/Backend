@@ -585,20 +585,20 @@ router.get('/check-guide-status/:walletAddress', async (req, res) => {
 });
 
 // Route om het saldo van de speler op te halen
-router.get('/bankvault/:playerId', async (req, res) => {
-    const { playerId } = req.params;
-  
+router.get('/bankvault/:walletAddress', async (req, res) => {
+    const { walletAddress } = req.params;
+
     try {
-      // Haal de speler op uit de database met de juiste playerId
-      const player = await Player.findOne({ playerId });
-  
+      // Haal de speler op uit de database met de juiste walletAddress
+      const player = await Player.findOne({ walletAddress });
+
       if (!player) {
         return res.status(404).json({ error: 'Player not found' });
       }
-  
+
       // Bereken de rente
       const interest = player.calculateInterest();
-  
+
       res.json({
         balance: player.money, // Gebruik money in plaats van balance
         interest: interest,
@@ -610,19 +610,19 @@ router.get('/bankvault/:playerId', async (req, res) => {
   });
 
 // Route om het saldo bij te werken (deposit of withdraw)
-router.put('/bankvault/:playerId', async (req, res) => {
-    const { playerId } = req.params;
+router.put('/bankvault/:walletAddress', async (req, res) => {
+    const { walletAddress } = req.params;
     const { depositAmount, withdrawAmount } = req.body;
-  
+
     try {
-      // Zoek de speler in de database met playerId
-      let player = await Player.findOne({ playerId });
-  
+      // Zoek de speler in de database met walletAddress
+      let player = await Player.findOne({ walletAddress });
+
       if (!player) {
         // Maak een nieuwe speler aan als deze niet bestaat
-        player = new Player({ playerId });
+        player = new Player({ walletAddress });
       }
-  
+
       // Verwerk de storting
       if (depositAmount) {
         // Voeg het deposit bedrag toe aan het saldo (money)
@@ -630,7 +630,7 @@ router.put('/bankvault/:playerId', async (req, res) => {
         // Stel de deposit datum in
         player.depositDate = new Date();
       }
-  
+
       // Verwerk de opname
       if (withdrawAmount) {
         if (withdrawAmount <= player.money) {
@@ -640,13 +640,13 @@ router.put('/bankvault/:playerId', async (req, res) => {
           return res.status(400).json({ error: 'Insufficient funds' });
         }
       }
-  
+
       // Sla de speler op in de database
       await player.save();
-  
+
       // Recalculeer de rente na de update
       const interest = player.calculateInterest();
-  
+
       res.json({
         success: true,
         balance: player.money, // Geef het bijgewerkte saldo terug
@@ -656,7 +656,6 @@ router.put('/bankvault/:playerId', async (req, res) => {
       res.status(500).json({ error: error.message });
     }
   });
-
 
 
 module.exports = router;
