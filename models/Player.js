@@ -37,7 +37,7 @@ const playerSchema = new mongoose.Schema({
     isPro: { type: Boolean, default: false },
     family: { type: mongoose.Schema.Types.ObjectId, ref: 'Family', default: null },
     createdAt: { type: Date, default: Date.now },
-    hasSeenGuide: { type: Boolean, default: false },  // Voeg dit veld toe
+    hasSeenGuide: { type: Boolean, default: false },
     inbox: { type: [inboxMessageSchema], default: [] },
     base: {
         stage: { type: Number, default: 1 },
@@ -84,6 +84,12 @@ const playerSchema = new mongoose.Schema({
         jailReleaseTime: { type: Date, default: null }
     },
     jailCount: { type: Number, default: 0 },
+
+    // Bank vault-related fields
+    balance: { type: Number, default: 0 }, // The player's current balance in the bank vault
+    depositDate: { type: Date, default: null }, // The date the player made the deposit
+    interest: { type: Number, default: 0 }, // The interest accrued on the deposited amount
+
 }, { collection: 'players' });
 
 // Define compound index for faster querying on username and walletAddress

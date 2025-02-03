@@ -586,6 +586,76 @@ router.get('/check-guide-status/:walletAddress', async (req, res) => {
 
 
 
+// Route om het saldo van de speler op te halen
+router.get('/bankvault/:playerId', async (req, res) => {
+    const { playerId } = req.params;
+  
+    try {
+      // Haal de speler op uit de database
+      const player = await Player.findOne({ playerId });
+  
+      if (!player) {
+        return res.status(404).json({ error: 'Player not found' });
+      }
+  
+      // Rente berekenen
+      const interest = player.calculateInterest();
+  
+      res.json({
+        balance: player.balance,
+        interest: interest,
+        depositDate: player.depositDate ? player.depositDate.toLocaleDateString() : 'No deposit yet',
+      });
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
+  });
+  
+  // Route om het saldo bij te werken (deposit of withdraw)
+  router.put('/bankvault/:playerId', async (req, res) => {
+    const { playerId } = req.params;
+    const { depositAmount, withdrawAmount } = req.body;
+  
+    try {
+      // Zoek de speler in de database
+      let player = await Player.findOne({ playerId });
+  
+      if (!player) {
+        // Maak een nieuwe speler aan als deze niet bestaat
+        player = new Player({ playerId });
+      }
+  
+      // Verwerk deposit
+      if (depositAmount) {
+        player.balance += depositAmount;
+        player.depositDate = new Date(); // Stel de deposit datum in
+      }
+  
+      // Verwerk withdrawal
+      if (withdrawAmount) {
+        if (withdrawAmount <= player.balance) {
+          player.balance -= withdrawAmount;
+        } else {
+          return res.status(400).json({ error: 'Insufficient funds' });
+        }
+      }
+  
+      // Sla de speler op in de database
+      await player.save();
+  
+      // Recalculate the interest after the update
+      const interest = player.calculateInterest();
+  
+      res.json({
+        success: true,
+        balance: player.balance,
+        interest: interest,
+      });
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
+  });
+  
 
 
 
