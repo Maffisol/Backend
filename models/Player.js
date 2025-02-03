@@ -92,27 +92,21 @@ const playerSchema = new mongoose.Schema({
 
 }, { collection: 'players' });
 
-// Methode om rente te berekenen
-playerSchema.methods.calculateInterest = function () {
-    if (this.depositDate) {
-      // Bereken de verstreken tijd sinds de storting in weken
-      const weeksSinceDeposit = Math.floor((new Date() - new Date(this.depositDate)) / (1000 * 60 * 60 * 24 * 7));
-      
-      let interestRate = 0;
-  
-      // Rente logica op basis van weken
-      if (weeksSinceDeposit >= 4) {
-        interestRate = 10;  // 10% na 1 maand
-      } else if (weeksSinceDeposit >= 2) {
-        interestRate = 4.5;  // 4.5% na 2 weken
-      } else if (weeksSinceDeposit >= 1) {
-        interestRate = 2;    // 2% na 1 week
-      }
-  
-      return this.money * (interestRate / 100);  // Bereken de rente op het saldo
+// Model functie om de rente te berekenen (optioneel, als je rente berekening wil toevoegen)
+playerSchema.methods.calculateInterest = function() {
+    // Voorbeeld van rente berekening (pas dit aan op basis van je eigen logica)
+    const currentDate = new Date();
+    const daysInBank = Math.floor((currentDate - this.depositDate) / (1000 * 60 * 60 * 24)); // Aantal dagen in de bankkluis
+
+    if (daysInBank >= 30) {
+        return 0.10; // 10% rente na 30 dagen
+    } else if (daysInBank >= 14) {
+        return 0.045; // 4.5% rente na 14 dagen
+    } else if (daysInBank >= 7) {
+        return 0.02; // 2% rente na 7 dagen
     }
-    return 0;  // Geen rente als er nog geen storting is
-  };
+    return 0; // Geen rente voor minder dan 7 dagen
+};
 
 // Define compound index for faster querying on username and walletAddress
 playerSchema.index({ walletAddress: 1, username: 1 });

@@ -622,6 +622,7 @@ router.get('/bankvault/:walletAddress', async (req, res) => {
 });
 
 // Route om het saldo bij te werken (deposit of withdraw)
+// Route om het saldo bij te werken (deposit of withdraw)
 router.put('/bankvault/:walletAddress', async (req, res) => {
     const { walletAddress } = req.params;
     const { depositAmount, withdrawAmount } = req.body;
@@ -637,16 +638,15 @@ router.put('/bankvault/:walletAddress', async (req, res) => {
 
         // Verwerk de storting
         if (depositAmount) {
-            // Controleer of de speler genoeg geld heeft om te storten
+            // Controleer of de speler genoeg money heeft om te storten
             if (depositAmount <= player.money) {
-                // Trek het deposit bedrag af van de wallet (money)
+                // Verlaag het normale saldo van de speler en verhoog de bankkluis saldo
                 player.money -= depositAmount;
-
-                // Voeg het deposit bedrag toe aan de vault (bank balance)
-                player.vaultBalance += depositAmount;
-
-                // Stel de deposit datum in
-                player.depositDate = new Date();
+                player.balance += depositAmount;
+                // Stel de deposit datum in (indien nog niet ingesteld)
+                if (!player.depositDate) {
+                    player.depositDate = new Date();
+                }
             } else {
                 return res.status(400).json({ error: 'Insufficient funds to deposit' });
             }
@@ -654,14 +654,13 @@ router.put('/bankvault/:walletAddress', async (req, res) => {
 
         // Verwerk de opname
         if (withdrawAmount) {
-            if (withdrawAmount <= player.vaultBalance) {
-                // Trek het withdraw bedrag af van de vault (bank balance)
-                player.vaultBalance -= withdrawAmount;
-
-                // Voeg het withdraw bedrag toe aan de wallet (money)
+            // Controleer of de speler genoeg balance heeft in de bankkluis
+            if (withdrawAmount <= player.balance) {
+                // Verlaag het saldo in de bankkluis en verhoog het normale saldo van de speler
+                player.balance -= withdrawAmount;
                 player.money += withdrawAmount;
             } else {
-                return res.status(400).json({ error: 'Insufficient funds in vault' });
+                return res.status(400).json({ error: 'Insufficient funds in bank vault' });
             }
         }
 
@@ -673,15 +672,13 @@ router.put('/bankvault/:walletAddress', async (req, res) => {
 
         res.json({
             success: true,
-            balance: player.vaultBalance, // Geef de bankbalance terug, niet de wallet money
-            interest: interest,    // Geef de rente terug
+            balance: player.balance, // Geef het saldo in de bankkluis terug
+            money: player.money,     // Geef het normale saldo terug
+            interest: interest,      // Geef de rente terug
         });
     } catch (error) {
         res.status(500).json({ error: error.message });
     }
 });
-
-
-
 
 module.exports = router;
