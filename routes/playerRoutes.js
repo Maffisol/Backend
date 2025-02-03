@@ -610,8 +610,9 @@ router.get('/bankvault/:walletAddress', async (req, res) => {
             }
         }
 
+        // Hier wordt de balance geretourneerd in plaats van money
         res.json({
-            balance: player.money, // Gebruik money in plaats van balance
+            balance: player.balance, // Geef de balance terug
             interest: interest,
             depositDate: depositDateString,  // De veilige datumstring
         });
@@ -626,47 +627,53 @@ router.put('/bankvault/:walletAddress', async (req, res) => {
     const { depositAmount, withdrawAmount } = req.body;
 
     try {
-      // Zoek de speler in de database met walletAddress
-      let player = await Player.findOne({ walletAddress });
+        // Zoek de speler in de database met walletAddress
+        let player = await Player.findOne({ walletAddress });
 
-      if (!player) {
-        // Maak een nieuwe speler aan als deze niet bestaat
-        player = new Player({ walletAddress });
-      }
-
-      // Verwerk de storting
-      if (depositAmount) {
-        // Voeg het deposit bedrag toe aan het saldo (money)
-        player.money += depositAmount;
-        // Stel de deposit datum in
-        player.depositDate = new Date();
-      }
-
-      // Verwerk de opname
-      if (withdrawAmount) {
-        if (withdrawAmount <= player.money) {
-          // Trek het withdraw bedrag af van het saldo (money)
-          player.money -= withdrawAmount;
-        } else {
-          return res.status(400).json({ error: 'Insufficient funds' });
+        if (!player) {
+            // Maak een nieuwe speler aan als deze niet bestaat
+            player = new Player({ walletAddress });
         }
-      }
 
-      // Sla de speler op in de database
-      await player.save();
+        // Verwerk de storting
+        if (depositAmount) {
+            // Voeg het deposit bedrag toe aan het saldo (money)
+            player.money += depositAmount;
 
-      // Recalculeer de rente na de update
-      const interest = player.calculateInterest();
+            // Bereken de nieuwe balance na de storting en sla het op
+            player.balance = player.money; // Bijwerken van de balance
+            player.depositDate = new Date(); // Stel de deposit datum in
+        }
 
-      res.json({
-        success: true,
-        balance: player.money, // Geef het bijgewerkte saldo terug
-        interest: interest,    // Geef de rente terug
-      });
+        // Verwerk de opname
+        if (withdrawAmount) {
+            if (withdrawAmount <= player.money) {
+                // Trek het withdraw bedrag af van het saldo (money)
+                player.money -= withdrawAmount;
+
+                // Bereken de nieuwe balance na de opname en sla het op
+                player.balance = player.money; // Bijwerken van de balance
+            } else {
+                return res.status(400).json({ error: 'Insufficient funds' });
+            }
+        }
+
+        // Sla de speler op in de database
+        await player.save();
+
+        // Recalculeer de rente na de update
+        const interest = player.calculateInterest();
+
+        res.json({
+            success: true,
+            balance: player.balance, // Geef het bijgewerkte saldo terug
+            interest: interest,    // Geef de rente terug
+        });
     } catch (error) {
-      res.status(500).json({ error: error.message });
+        res.status(500).json({ error: error.message });
     }
-  });
+});
+
 
 
 module.exports = router;
