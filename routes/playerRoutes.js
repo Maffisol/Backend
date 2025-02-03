@@ -637,24 +637,31 @@ router.put('/bankvault/:walletAddress', async (req, res) => {
 
         // Verwerk de storting
         if (depositAmount) {
-            // Voeg het deposit bedrag toe aan het saldo (money)
-            player.money += depositAmount;
+            // Controleer of de speler genoeg geld heeft om te storten
+            if (depositAmount <= player.money) {
+                // Trek het deposit bedrag af van de wallet (money)
+                player.money -= depositAmount;
 
-            // Bereken de nieuwe balance na de storting en sla het op
-            player.balance = player.money; // Bijwerken van de balance
-            player.depositDate = new Date(); // Stel de deposit datum in
+                // Voeg het deposit bedrag toe aan de vault (bank balance)
+                player.vaultBalance += depositAmount;
+
+                // Stel de deposit datum in
+                player.depositDate = new Date();
+            } else {
+                return res.status(400).json({ error: 'Insufficient funds to deposit' });
+            }
         }
 
         // Verwerk de opname
         if (withdrawAmount) {
-            if (withdrawAmount <= player.money) {
-                // Trek het withdraw bedrag af van het saldo (money)
-                player.money -= withdrawAmount;
+            if (withdrawAmount <= player.vaultBalance) {
+                // Trek het withdraw bedrag af van de vault (bank balance)
+                player.vaultBalance -= withdrawAmount;
 
-                // Bereken de nieuwe balance na de opname en sla het op
-                player.balance = player.money; // Bijwerken van de balance
+                // Voeg het withdraw bedrag toe aan de wallet (money)
+                player.money += withdrawAmount;
             } else {
-                return res.status(400).json({ error: 'Insufficient funds' });
+                return res.status(400).json({ error: 'Insufficient funds in vault' });
             }
         }
 
@@ -666,13 +673,14 @@ router.put('/bankvault/:walletAddress', async (req, res) => {
 
         res.json({
             success: true,
-            balance: player.balance, // Geef het bijgewerkte saldo terug
+            balance: player.vaultBalance, // Geef de bankbalance terug, niet de wallet money
             interest: interest,    // Geef de rente terug
         });
     } catch (error) {
         res.status(500).json({ error: error.message });
     }
 });
+
 
 
 
