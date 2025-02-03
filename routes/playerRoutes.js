@@ -584,25 +584,23 @@ router.get('/check-guide-status/:walletAddress', async (req, res) => {
     }
 });
 
-
-
 // Route om het saldo van de speler op te halen
 router.get('/bankvault/:playerId', async (req, res) => {
     const { playerId } = req.params;
   
     try {
-      // Haal de speler op uit de database
+      // Haal de speler op uit de database met de juiste playerId
       const player = await Player.findOne({ playerId });
   
       if (!player) {
         return res.status(404).json({ error: 'Player not found' });
       }
   
-      // Rente berekenen
+      // Bereken de rente
       const interest = player.calculateInterest();
   
       res.json({
-        balance: player.balance,
+        balance: player.money, // Gebruik money in plaats van balance
         interest: interest,
         depositDate: player.depositDate ? player.depositDate.toLocaleDateString() : 'No deposit yet',
       });
@@ -610,14 +608,14 @@ router.get('/bankvault/:playerId', async (req, res) => {
       res.status(500).json({ error: error.message });
     }
   });
-  
-  // Route om het saldo bij te werken (deposit of withdraw)
-  router.put('/bankvault/:playerId', async (req, res) => {
+
+// Route om het saldo bij te werken (deposit of withdraw)
+router.put('/bankvault/:playerId', async (req, res) => {
     const { playerId } = req.params;
     const { depositAmount, withdrawAmount } = req.body;
   
     try {
-      // Zoek de speler in de database
+      // Zoek de speler in de database met playerId
       let player = await Player.findOne({ playerId });
   
       if (!player) {
@@ -625,16 +623,19 @@ router.get('/bankvault/:playerId', async (req, res) => {
         player = new Player({ playerId });
       }
   
-      // Verwerk deposit
+      // Verwerk de storting
       if (depositAmount) {
-        player.balance += depositAmount;
-        player.depositDate = new Date(); // Stel de deposit datum in
+        // Voeg het deposit bedrag toe aan het saldo (money)
+        player.money += depositAmount;
+        // Stel de deposit datum in
+        player.depositDate = new Date();
       }
   
-      // Verwerk withdrawal
+      // Verwerk de opname
       if (withdrawAmount) {
-        if (withdrawAmount <= player.balance) {
-          player.balance -= withdrawAmount;
+        if (withdrawAmount <= player.money) {
+          // Trek het withdraw bedrag af van het saldo (money)
+          player.money -= withdrawAmount;
         } else {
           return res.status(400).json({ error: 'Insufficient funds' });
         }
@@ -643,19 +644,18 @@ router.get('/bankvault/:playerId', async (req, res) => {
       // Sla de speler op in de database
       await player.save();
   
-      // Recalculate the interest after the update
+      // Recalculeer de rente na de update
       const interest = player.calculateInterest();
   
       res.json({
         success: true,
-        balance: player.balance,
-        interest: interest,
+        balance: player.money, // Geef het bijgewerkte saldo terug
+        interest: interest,    // Geef de rente terug
       });
     } catch (error) {
       res.status(500).json({ error: error.message });
     }
   });
-  
 
 
 
