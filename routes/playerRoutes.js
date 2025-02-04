@@ -613,6 +613,7 @@ router.get('/bankvault/:walletAddress', async (req, res) => {
         // Hier wordt de balance geretourneerd in plaats van money
         res.json({
             balance: player.balance, // Geef de balance terug
+            money: player.money, // Normale saldo van de speler
             interest: interest,
             depositDate: depositDateString,  // De veilige datumstring
         });
