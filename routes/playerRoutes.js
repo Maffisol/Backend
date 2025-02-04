@@ -584,72 +584,101 @@ router.get('/check-guide-status/:walletAddress', async (req, res) => {
     }
 });
 
-// Ophalen van de bank balance en money van de speler
+// Route om het saldo van de speler op te halen
 router.get('/bankvault/:walletAddress', async (req, res) => {
+    const { walletAddress } = req.params;
+
     try {
-        const { walletAddress } = req.params;
+        // Haal de speler op uit de database met de juiste walletAddress
         const player = await Player.findOne({ walletAddress });
 
         if (!player) {
             return res.status(404).json({ error: 'Player not found' });
         }
 
-        res.json({
-            balance: player.balance, // Geld in de kluis
-            money: player.money,     // Geld dat gebruikt kan worden voor storten/opnemen
-            interest: calculateInterest(player.balance, player.depositDate), // Voeg dit toe!
-            depositDate: player.depositDate || 'No deposit yet'
-        });
+        // Bereken de rente
+        const interest = player.calculateInterest();
 
+        // Zorg ervoor dat depositDate altijd een geldig Date object is
+        let depositDateString = 'No deposit yet';  // Default value
+
+        if (player.depositDate) {
+            // Controleer of depositDate een geldig Date object is
+            const depositDate = new Date(player.depositDate);
+            if (!isNaN(depositDate.getTime())) {
+                depositDateString = depositDate.toLocaleDateString();
+            }
+        }
+
+        // Hier wordt de balance geretourneerd in plaats van money
+        res.json({
+            balance: player.balance, // Geef de balance terug
+            money: player.money, // Normale saldo van de speler
+            interest: interest,
+            depositDate: depositDateString,  // De veilige datumstring
+        });
     } catch (error) {
-        console.error('Error fetching bank vault data:', error);
-        res.status(500).json({ error: 'Internal server error' });
+        res.status(500).json({ error: error.message });
     }
 });
 
-// Storten of opnemen van geld in de kluis
+// Route om het saldo bij te werken (deposit of withdraw)
+// Route om het saldo bij te werken (deposit of withdraw)
 router.put('/bankvault/:walletAddress', async (req, res) => {
+    const { walletAddress } = req.params;
+    const { depositAmount, withdrawAmount } = req.body;
+
     try {
-        const { walletAddress } = req.params;
-        const { depositAmount, withdrawAmount } = req.body;
-        const player = await Player.findOne({ walletAddress });
+        // Zoek de speler in de database met walletAddress
+        let player = await Player.findOne({ walletAddress });
 
         if (!player) {
-            return res.status(404).json({ error: 'Player not found' });
+            // Maak een nieuwe speler aan als deze niet bestaat
+            player = new Player({ walletAddress });
         }
 
-        if (depositAmount && depositAmount > 0) {
-            // Check of speler genoeg geld heeft om te storten
-            if (player.money < depositAmount) {
+        // Verwerk de storting
+        if (depositAmount) {
+            // Controleer of de speler genoeg money heeft om te storten
+            if (depositAmount <= player.money) {
+                // Verlaag het normale saldo van de speler en verhoog de bankkluis saldo
+                player.money -= depositAmount;
+                player.balance += depositAmount;
+                // Stel de deposit datum in (indien nog niet ingesteld)
+                if (!player.depositDate) {
+                    player.depositDate = new Date();
+                }
+            } else {
                 return res.status(400).json({ error: 'Insufficient funds to deposit' });
             }
-
-            player.money -= depositAmount; // Haal geld van beschikbaar saldo af
-            player.balance += depositAmount; // Zet geld in de kluis
-            player.depositDate = new Date(); // Update de stortingsdatum
         }
 
-        if (withdrawAmount && withdrawAmount > 0) {
-            // Check of speler genoeg geld in de kluis heeft om op te nemen
-            if (player.balance < withdrawAmount) {
+        // Verwerk de opname
+        if (withdrawAmount) {
+            // Controleer of de speler genoeg balance heeft in de bankkluis
+            if (withdrawAmount <= player.balance) {
+                // Verlaag het saldo in de bankkluis en verhoog het normale saldo van de speler
+                player.balance -= withdrawAmount;
+                player.money += withdrawAmount;
+            } else {
                 return res.status(400).json({ error: 'Insufficient funds in bank vault' });
             }
-
-            player.balance -= withdrawAmount; // Haal geld uit de kluis
-            player.money += withdrawAmount; // Zet geld terug bij beschikbaar saldo
         }
 
+        // Sla de speler op in de database
         await player.save();
 
-        res.json({
-            balance: player.balance,
-            money: player.money,
-            depositDate: player.depositDate
-        });
+        // Recalculeer de rente na de update
+        const interest = player.calculateInterest();
 
+        res.json({
+            success: true,
+            balance: player.balance, // Geef het saldo in de bankkluis terug
+            money: player.money,     // Geef het normale saldo terug
+            interest: interest,      // Geef de rente terug
+        });
     } catch (error) {
-        console.error('Error updating bank vault:', error);
-        res.status(500).json({ error: 'Internal server error' });
+        res.status(500).json({ error: error.message });
     }
 });
 
