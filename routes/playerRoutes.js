@@ -597,6 +597,7 @@ router.get('/bankvault/:walletAddress', async (req, res) => {
         res.json({
             balance: player.balance, // Geld in de kluis
             money: player.money,     // Geld dat gebruikt kan worden voor storten/opnemen
+            interest: calculateInterest(player.balance, player.depositDate), // Voeg dit toe!
             depositDate: player.depositDate || 'No deposit yet'
         });
 
